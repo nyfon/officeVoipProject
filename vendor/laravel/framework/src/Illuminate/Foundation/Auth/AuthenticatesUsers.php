@@ -5,10 +5,13 @@ namespace Illuminate\Foundation\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use function PHPSTORM_META\type;
 
 trait AuthenticatesUsers
 {
     use RedirectsUsers, ThrottlesLogins;
+
+    private $type;
 
     /**
      * Show the application's login form.
@@ -63,10 +66,24 @@ trait AuthenticatesUsers
      */
     protected function validateLogin(Request $request)
     {
-        $request->validate([
-            $this->username() => 'required|string',
-            'password' => 'required|string',
-        ]);
+
+        if (strlen($request['username']) === 10){
+            $this->type = 'username';
+            $request->validate([
+                $this->username() => 'required|numeric|digits:10|iranianNationalCode',
+                'password' => 'required|string',
+            ]);
+        }else{
+            $this->type = 'phone_number';
+            $request['phone_number'] = $request['username'];
+            unset($request['username']);
+
+            $request->validate([
+                $this->username() => 'required|numeric|digits:11|regex:/^09[0-9]{9}$/',
+                'password' => 'required|string',
+            ]);
+            $request['phone_number'] = $this->validatePhoneNumber($request['phone_number']);
+        }
     }
 
     /**
@@ -90,6 +107,7 @@ trait AuthenticatesUsers
      */
     protected function credentials(Request $request)
     {
+
         return $request->only($this->username(), 'password');
     }
 
@@ -143,7 +161,12 @@ trait AuthenticatesUsers
      */
     public function username()
     {
-        return 'email';
+
+        if($this->type === 'username'){
+            return 'username';
+        }elseif ($this->type === 'phone_number'){
+            return 'phone_number';
+        }
     }
 
     /**
@@ -181,4 +204,15 @@ trait AuthenticatesUsers
     {
         return Auth::guard();
     }
+
+    /**
+     * @param $phone_number
+     * @return string
+     */
+    private function validatePhoneNumber($phone_number): string
+    {
+        $phone_number = substr($phone_number, 1);
+        return '0098' . $phone_number;
+    }
+
 }

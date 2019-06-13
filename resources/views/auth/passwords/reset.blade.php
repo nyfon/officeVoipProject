@@ -1,59 +1,56 @@
 @extends('layouts.app')
 
+@extends('layouts.app')
+
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('password.update') }}">
+    <div class="container">
+        <div class="row display-flex">
+            <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="landing-content">
+                    <h1>به بزرگترین و کامل ترین شبکه اجتماعی خوش آمدید!</h1>
+                    <p>ما بهترین و بزرگترین شبکه اجتماعی با 5 میلیارد کاربر فعال در سراسر جهان هستیم. به اشتراک گذاشتن
+                        افکار خود، نوشتن پست های وبلاگ، نشان دادن موسیقی مورد علاقه خود را از طریق کسب مدالها و امکانات دیگر..!
+                    </p>
+                    <a href="{{ route('register' ,'user') }}" class="btn btn-md btn-border c-white">ثبت نام کنید!</a>
+                </div>
+            </div>
+
+            <div class="col col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
+
+                <!-- Login-Registration Form  -->
+
+                <div class="registration-login-form">
+
+                    <div class="title h6">فراموشی رمز عبور</div>
+
+                    @if(count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <form class="content" action="{{ route('password.update') }}" method="post">
                         @csrf
+                        <div class="row">
+                            <div class="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="form-group label-floating is-empty">
+                                    <label class="control-label">کد ارسالی</label>
+                                    <input class="form-control" placeholder="" type="text" name="numberActive" value="{{ old('numberActive') }}" required autofocus>
+                                </div>
 
-                        <input type="hidden" name="token" value="{{ $token }}">
+                                <div class="remember float-right">
+                                    <a href="{{ route('resend.sms') }}" class="forgot">ارسال دوباره پیامک</a>
+                                </div>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                <button type="submit" class="btn btn-lg btn-primary full-width">ورود</button>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ $email ?? old('email') }}" required autofocus>
 
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Reset Password') }}
-                                </button>
+                                <p>افزودن حساب کاربری <a href="{{ route('register') }}">ثبت نام کنید !</a>از بهترین خدمات ما بهره مند شوید !</p>
                             </div>
                         </div>
                     </form>
@@ -61,5 +58,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection

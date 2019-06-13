@@ -15,9 +15,9 @@ trait RegistersUsers
      *
      * @return \Illuminate\Http\Response
      */
-    public function showRegistrationForm()
+    public function showRegistrationForm($userType)
     {
-        return view('auth.register');
+        return view('auth.register' , compact('userType'));
     }
 
     /**

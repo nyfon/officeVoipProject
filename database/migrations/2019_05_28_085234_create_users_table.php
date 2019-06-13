@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
 
             $table->increments('id');
             $table->string('username' , 45);
-            $table->string('password' , 45);
+            $table->string('password');
             $table->string('phone_number' , 15);
             $table->string('description' , 250)->nullable();
             $table->enum('isActive' , ['active' , 'inactive']);

@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url('/frontend/Bootstrap/dist/css/bootstrap-reboot.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url('/frontend/Bootstrap/dist/css/bootstrap.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url('/frontend/Bootstrap/dist/css/bootstrap-grid.css') }}">
-
+    <link rel="stylesheet" href="{{ url('css/sweetalert2.min.css') }}" type="text/css">
     <!-- Main Styles CSS -->
     <link rel="stylesheet" type="text/css" href="{{ url('/frontend/css/main.min.css') }}">
 
@@ -117,7 +117,9 @@
 <script defer src="{{ url('/frontEnd/fonts/fontawesome-all.js') }}"></script>
 
 <script src="{{ url('/frontEnd/Bootstrap/dist/js/bootstrap.bundle.js') }}"></script>
-
+<!-- Include this after the sweet alert js file -->
+<script src="{{ url('js/sweetalert2.min.js') }}"></script>
+@include('sweet::alert')
 </body>
 
 <!-- Mirrored from html.crumina.net/html-olympus/01-LandingPage.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jan 2019 07:39:27 GMT -->

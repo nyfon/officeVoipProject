@@ -390,9 +390,18 @@ ul {
 	padding: 15px 25px;
 	margin-bottom: 0
 }
-.author-page .account-settings a {
+.author-page .account-settings a,.author-page .account-settings button {
 	padding: 13px 0
 }
+.author-page .account-settings button{
+    background: none;
+    border: 0;
+}
+
+.author-page .account-settings button:after{
+    border: 0;
+}
+
 .author-page .mCustomScrollbar {
 	max-height: calc(100vh - 40px)
 }
@@ -400,14 +409,14 @@ ul {
 	padding: 15px 25px;
 	margin-bottom: 0
 }
-.account-settings a {
+.account-settings a , .account-settings button{
 	font-size: 12px;
 	color: #515365
 }
-.account-settings a:hover {
+.account-settings a:hover ,.account-settings button:hover {
 	color: #ff5e3a
 }
-.account-settings a>* {
+.account-settings a>* , .account-settings button>* {
 	display: inline-block;
 	vertical-align: middle
 }
@@ -3770,6 +3779,13 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 	transition: left .3s ease, background .3s ease, box-shadow .1s ease;
 	text-align: center
 }
+.description-toggle .togglebutton span{
+    color: #615665;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
 .description-toggle .togglebutton,
 .switcher-block>:last-child {
 	text-align: left;
@@ -4839,7 +4855,8 @@ fieldset[disabled] .checkbox input[type=checkbox] {
 .create-group {
 	background-color: transparent;
 	border: 2px dashed #bbc0d5;
-	position: relative
+	position: relative;
+    height: 250px;
 }
 .create-group .content {
 	position: absolute;
@@ -5313,7 +5330,7 @@ fieldset[disabled] .checkbox input[type=checkbox] {
 }
 .main-header {
 	padding: 70px 0;
-	max-width: calc(100% - 140px);
+	max-width: calc(100%);
 	margin: 0 auto 30px;
 	position: relative;
 	background-position: 50% 50%
@@ -5404,6 +5421,15 @@ fieldset[disabled] .checkbox input[type=checkbox] {
 	padding: 12px 0;
 	color: #888da8;
 	display: block;
+}
+.your-profile-menu li a.cardDetale {
+    font-size: 12px;
+    font-weight: bold;
+}
+ a.cardPrice {
+     font-size: 1.3rem !important;
+     color: #fb3449 !important;
+     margin-top: 7px;
 }
 .profile-settings-responsive .fa-angle-left,
 .profile-settings-responsive.open .fa-angle-right {

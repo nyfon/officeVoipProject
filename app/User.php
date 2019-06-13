@@ -2,6 +2,9 @@
 
 namespace App;
 
+use App\Models\ActivationCode;
+use App\Models\GeneralDoctors;
+use App\Models\GeneralPatients;
 use App\Models\UserGroup;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -19,7 +22,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'description', 'acl', 'phone_number'
+        'username', 'description', 'acl', 'phone_number', 'user_group_id', 'isActive','password'
     ];
 
     /**
@@ -28,7 +31,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token', 'isActive'
+        'password', 'remember_token'
     ];
 
     /**
@@ -44,9 +47,42 @@ class User extends Authenticatable
     /**
      * Get the post that owns the comment.
      */
-    public function group()
+    public function group(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(UserGroup::class);
+    }
+
+    /**
+     * Get the Activation Code for user.
+     */
+    public function activationCode(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(ActivationCode::class);
+    }
+
+    /**
+     * Get the general doctor for user.
+     */
+    public function generalDoctor(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(GeneralDoctors::class);
+    }
+
+    /**
+     * Get the general patient for user.
+     */
+    public function generalPatient(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(GeneralPatients::class);
+    }
+
+    /**
+     * @return string
+     */
+    public function normalizePhoneNumber(): string
+    {
+        $phone_number = substr($this->phone_number , 4);
+        return '0'. $phone_number;
     }
 
 }

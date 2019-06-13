@@ -172,6 +172,12 @@ return array(
         'video'=>'فیلم',
         'amount'=>'قیمت',
         'optionsCheckboxes'=>'شرایط و ضوابط',
+        'phone_number'=>'شماره تلفن',
+        'phoneNumber'=>'شماره تلفن',
+        'description'=>'توضیحات',
+        'medicalSystemNumber'=>'شماره نظام پزشکی',
+        'officeName'=>'نام مطب',
+        'mobileTel'=>'شماره موبایل',
 
     ),
 );
