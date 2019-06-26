@@ -20,12 +20,29 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
+
     /**
-     * Where to redirect users after login.
-     *
-     * @var string
+     * @return string|null
      */
-    protected $redirectTo = '/home';
+    public function redirectTo(): ?string
+    {
+        switch (auth()->user()->userGroup->name ){
+
+            case 'doctor':
+                return '/doctor/panel';
+                break;
+
+            case 'patient':
+                return '/patient/panel';
+                break;
+
+            case 'admin':
+                return '/admin/panel';
+                break;
+
+        }
+
+    }
 
     /**
      * Create a new controller instance.

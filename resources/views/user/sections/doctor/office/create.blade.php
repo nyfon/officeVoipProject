@@ -35,13 +35,28 @@
                                     <div class="form-group label-floating is-select">
                                         <label class="control-label">نوع مطب</label>
                                         <select class="selectpicker form-control" name="officeType" size="auto">
-                                            <option value="personalOffice" {{ (old('officeType') === 'personalOffice')? 'selected' : '' }} >مطب شخصی</option>
-                                            <option value="clinic" {{ (old('officeType') === 'clinic')? 'selected' : '' }} >درمانگاه</option>
+                                            <option
+                                                value="personalOffice" {{ (old('officeType') === 'personalOffice')? 'selected' : '' }} >
+                                                مطب شخصی
+                                            </option>
+                                            <option
+                                                value="clinic" {{ (old('officeType') === 'clinic')? 'selected' : '' }} >
+                                                درمانگاه
+                                            </option>
                                         </select>
                                     </div>
                                 </div>
 
-
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="form-group label-floating is-select">
+                                        <label class="control-label">شماره مجازی</label>
+                                        <select class="selectpicker form-control" name="virtualNumber" size="auto">
+                                            @foreach($virtualNumbers as $virtualNumber)
+                                                <option value="{{ $virtualNumber->id }}">{{ $virtualNumber->virtual_number }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group label-floating">

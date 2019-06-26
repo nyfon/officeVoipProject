@@ -18,7 +18,7 @@ class CreateReservedVirtualNumbersTable extends Migration
             $table->string('number' , 15);
             $table->integer('last_owner_id')->nullable()->default(null);
             $table->tinyInteger('is_active');
-            $table->integer('parent-id')->nullable()->default(null);
+            $table->integer('parent_id')->nullable()->default(null);
             $table->tinyInteger('is_vip_number');
             $table->timestamps();
         });

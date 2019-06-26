@@ -9,6 +9,7 @@ use App\Models\UserGroup;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use phpDocumentor\Reflection\Types\Self_;
 
 class User extends Authenticatable
 {
@@ -22,7 +23,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'description', 'acl', 'phone_number', 'user_group_id', 'isActive','password'
+        'username', 'description', 'acl', 'phone_number', 'user_group_id', 'is_status', 'password'
     ];
 
     /**
@@ -44,10 +45,59 @@ class User extends Authenticatable
         'acl' => 'array',
     ];
 
+    private const valueIsStatus = [
+        'onactive' => 1,
+        'active' => 2,
+        'deleted' => 3,
+        'lock' => 4,
+    ];
+
+    public static function mergeIsStatus($value)
+    {
+        return self::valueIsStatus[$value];
+    }
+
+    public function checkIsStatus()
+    {
+        switch ($this->is_status) {
+            case Self::mergeIsStatus('onactive'):
+                return 'onactive';
+                break;
+
+            case Self::mergeIsStatus('active'):
+                return 'active';
+                break;
+
+            case Self::mergeIsStatus('deleted'):
+                return 'deleted';
+                break;
+
+            case Self::mergeIsStatus('lock'):
+                return 'lock';
+                break;
+
+        }
+
+    }
+
+    public function setPhoneNumberAttribute($value)
+    {
+        $phone_number = substr($value, 1);
+        $phone_number = '0098' . $phone_number;
+        return  $this->attributes['phone_number'] = $phone_number;
+    }
+
+    public function getPhoneNumberAttribute($value)
+    {
+        $phone_number = substr($value, 4);
+        return '0' . $phone_number;
+    }
+
+
     /**
      * Get the post that owns the comment.
      */
-    public function group(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function userGroup(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(UserGroup::class);
     }
@@ -81,8 +131,36 @@ class User extends Authenticatable
      */
     public function normalizePhoneNumber(): string
     {
-        $phone_number = substr($this->phone_number , 4);
-        return '0'. $phone_number;
+        $phone_number = substr($this->phone_number, 4);
+        return '0' . $phone_number;
     }
+
+    /**
+     * show is_status user in view
+     *
+     * @return string|null
+     */
+    public function isStatusFarsi(): ?string
+    {
+        switch ($this->is_status) {
+            case Self::mergeIsStatus('onactive'):
+                return 'غیر فعال';
+                break;
+
+            case Self::mergeIsStatus('active'):
+                return 'فعال';
+                break;
+
+            case Self::mergeIsStatus('deleted'):
+                return 'حذف شده';
+                break;
+
+            case Self::mergeIsStatus('lock'):
+                return 'قفل';
+                break;
+
+        }
+    }
+
 
 }

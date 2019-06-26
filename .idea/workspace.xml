@@ -2,44 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ce1b20c-ce91-47cb-8388-6dd86a3bcf4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/mohamad.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/officeVoipProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/officeVoipProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ActivateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ActivateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Doctor/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Doctor/DoctorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckActive.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckActive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Doctor/requestStoreOffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Doctor/requestStoreOffice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Doctor/requestUpdateInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Doctor/requestUpdateInformation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/GeneralDoctors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/GeneralDoctors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/GeneralPatients.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/GeneralPatients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ReservedVirtualNumber.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ReservedVirtualNumber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/UserGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/VoipServices.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/VoipServices.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_28_085234_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_28_085234_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/bootstrap-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/bootstrap-select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/ha-datetimepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/ha-datetimepicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/jquery-3.2.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/jquery-3.2.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/jquery.magnific-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/jquery.magnific-popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/run-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/run-chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/selectize.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/selectize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/swiper.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/swiper.jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_28_085236_create_activation_codes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_28_085236_create_activation_codes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_29_062222_create_general_doctors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_29_062222_create_general_doctors_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_08_041121_create_doctor_offices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_08_041121_create_doctor_offices_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_12_060954_create_general_patients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_12_060954_create_general_patients_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_13_081654_create_reserved_virtual_numbers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_13_081654_create_reserved_virtual_numbers_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/fa/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/changePassword.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/changePassword.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/common/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/partials/common/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/common/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/partials/common/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/doctor/navbarCart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/partials/doctor/navbarCart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/doctor/navbarPanelUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/partials/doctor/navbarPanelUser.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/patient/navbarPanelUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/partials/patient/navbarPanelUser.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/addService.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/profile/editInformation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/sections/doctor/profile/editInformation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/addService.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/SendsPasswordResetEmails.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/SendsPasswordResetEmails.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
@@ -144,40 +155,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="132" selection-start-line="132" selection-end-line="132" selection-end-column="103" />
+            <state relative-caret-position="-2064">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/service/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="238" column="110" selection-end-line="309" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="156" selection-start-line="156" selection-end-line="156" />
               <folding>
-                <element signature="e#47#96#0#PHP" expanded="true" />
+                <element signature="e#506#1792#1#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/user/partials/doctor/navbarPanelUser.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/user/partials/doctor/navbarCart.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="45" selection-start-line="45" selection-end-line="60" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="332">
+              <caret line="18" column="56" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="56" />
               <folding>
                 <element signature="e#47#75#0#PHP" expanded="true" />
               </folding>
@@ -185,56 +196,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/addService.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_13_081654_create_reserved_virtual_numbers_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/service/inactive.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="671">
+              <caret line="96" column="45" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_12_060954_create_general_patients_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="36" />
+            <state relative-caret-position="284">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_11_050259_create_voip_services_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/service/parent.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="45" />
+            <state relative-caret-position="380">
+              <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/29-YourAccount-AccountSettings.html">
+        <entry file="file://$PROJECT_DIR$/app/Models/VoipServices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="1991" column="28" selection-start-line="1991" selection-start-column="28" selection-end-line="1999" selection-end-column="38" />
+            <state relative-caret-position="288">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <element signature="e#30#69#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/office/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Models/VirtualNumbers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="1128">
+              <caret line="48" selection-start-line="48" selection-end-line="58" selection-end-column="5" />
+              <folding>
+                <element signature="e#30#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ReservedVirtualNumberController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="6" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -260,11 +277,25 @@
       <find>user_id</find>
       <find>OfficeController</find>
       <find>form</find>
+      <find>assets</find>
+      <find>&lt;!-- Navbar --&gt;</find>
+      <find>InitiateExpandableDataTable</find>
+      <find>con</find>
+      <find>group</find>
+      <find>App\User::mergeIsActive</find>
+      <find>خرو</find>
+      <find>mergeIsActive</find>
+      <find>Default</find>
+      <find>Dashboard</find>
+      <find>validatePhoneNumber</find>
+      <find>dd</find>
+      <find>Kim Ryder}}</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;{{ url('/frontEnd/</replace>
       <replace>href=&quot;{{ url('/frontEnd/</replace>
       <replace>xlink:href=&quot;/frontEnd/</replace>
+      <replace>AssetsAdmin</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -273,57 +304,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/doctor/sections/office/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/doctor/sections/office/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/Doctor/requestStoreOffice.php" />
-        <option value="$PROJECT_DIR$/app/Models/DoctorOffice.php" />
-        <option value="$PROJECT_DIR$/resources/views/doctor/sections/voipServices/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/doctor/partials/navbarPanelUser.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/doctor/sections/office/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/doctor/partials/navbarCart.blade.php" />
-        <option value="$PROJECT_DIR$/public/frontEnd/css/main.min.css" />
-        <option value="$PROJECT_DIR$/resources/views/doctor/sections/office/addService.blade.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/VoipServicesController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_08_041121_create_doctor_offices_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/GeneralPatients.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" />
-        <option value="$PROJECT_DIR$/app/Models/ActivationCode.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_29_062222_create_general_doctors_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_12_060954_create_general_patients_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/ActivateController.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/resources/views/patient/sections/profile/editInformation.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/patient/partials/navbarPanelUser.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_11_050259_create_voip_services_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/master.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/DoctorController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Patient/PatientController.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/activate.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/passwords/phoneNumber.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/passwords/changePassword.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/sections/patient/profile/editInformation.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/sections/patient/profile/changePassword.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/profile/editInformation.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/profile/changePassword.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/office/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/office/edit.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/SendsPasswordResetEmails.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/doctor/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/Doctor/storeRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/partials/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/doctor/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/Doctor/updateRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DoctorController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/patient/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/Patient/storeRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/Patient/updateRequest.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/patient/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PatientController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/doctor/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/GeneralPatients.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/patient/show.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_16_044514_create_purchases_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/ActivateController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_16_081842_create_purchase_rows_table.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_16_081843_create_virtual_numbers_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/UserVirtualNumber.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/office/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/office/addService.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Doctor/requestStoreOffice.php" />
+        <option value="$PROJECT_DIR$/resources/lang/fa/validation.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_08_041121_create_doctor_offices_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/DoctorOffice.php" />
+        <option value="$PROJECT_DIR$/app/Models/GeneralDoctors.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/office/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/partials/doctor/navbarPanelUser.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/VoipServices.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/partials/doctor/navbarCart.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/addService.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_13_081654_create_reserved_virtual_numbers_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/VirtualNumbers.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/partials/common/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/partials/common/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/payment.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/office/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/service/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/VoipServices.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/service/parent.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/service/index.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/service/inactive.blade.php" />
       </list>
     </option>
   </component>
@@ -421,11 +452,13 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/uxweb/sweet-alert" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/beberlei/assert" />
+      <path value="$PROJECT_DIR$/vendor/morilog/jalali" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="842" />
-    <option name="y" value="236" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -466,52 +499,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Doctor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Patient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-              <item name="Doctor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Includes" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
@@ -522,52 +510,13 @@
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
@@ -579,13 +528,6 @@
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="fa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -593,21 +535,14 @@
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -615,16 +550,7 @@
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-              <item name="doctor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="sections" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -632,46 +558,7 @@
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
-              <item name="doctor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
-              <item name="doctor" type="462c0819:PsiDirectoryNode" />
-              <item name="office" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
-              <item name="doctor" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
-              <item name="doctor" type="462c0819:PsiDirectoryNode" />
-              <item name="virtualNumber" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="sections" type="462c0819:PsiDirectoryNode" />
               <item name="patient" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -680,10 +567,25 @@
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="sections" type="462c0819:PsiDirectoryNode" />
-              <item name="patient" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
+              <item name="reservedVirtualNumber" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="sections" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
@@ -700,7 +602,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/sections/service" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -708,13 +610,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\admin\sections\service" />
+      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\app\Http\Controllers\Admin" />
       <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\sections\doctor\virtualNumber" />
-      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\sections\patient" />
-      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\sections\doctor" />
-      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\partials\patient" />
-      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\partials\doctor" />
+      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\app\Http\Requests\Admin" />
+      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\admin\sections" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\partials\patient" />
       <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\doctor\sections\office" />
       <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\doctor\sections\profile" />
     </key>
@@ -760,25 +663,35 @@
       <workItem from="1560315246731" duration="1010000" />
       <workItem from="1560319483717" duration="11304000" />
       <workItem from="1560400482240" duration="8894000" />
+      <workItem from="1560574132690" duration="354000" />
+      <workItem from="1560593166777" duration="486000" />
+      <workItem from="1560658385050" duration="14373000" />
+      <workItem from="1560745359035" duration="21146000" />
+      <workItem from="1560831677779" duration="22712000" />
+      <workItem from="1560916868780" duration="22123000" />
+      <workItem from="1561005363102" duration="6210000" />
+      <workItem from="1561436882205" duration="6824000" />
+      <workItem from="1561446814008" duration="13772000" />
+      <workItem from="1561522546211" duration="13627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144955000" />
+    <option name="totallyTimeSpent" value="266582000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18656716" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.22921109" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="GraphQL" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" x="0" y="23" width="1920" height="1017" id="Terminal" order="2" type="WINDOWED" visible="true" weight="0.696767" />
+      <window_info active="true" anchor="bottom" x="0" y="23" width="1920" height="1017" id="Terminal" order="2" type="WINDOWED" visible="true" weight="0.696767" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32998884" />
@@ -787,6 +700,7 @@
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="13" weight="0.32998884" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -797,331 +711,410 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_08_041121_create_doctor_offices_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/doctor/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="151">
+          <caret line="706" column="113" selection-start-line="706" selection-start-column="113" selection-end-line="706" selection-end-column="113" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_28_085236_create_activation_codes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_29_062222_create_general_doctors_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="25" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/ActivationCode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
-          <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
-          <folding>
-            <element signature="e#47#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="73" column="34" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/patient/partials/errors.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/patient/sections/profile/editInformation.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-676">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/patient/partials/navbarPanelUser.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/patient/navbarPanelUser.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/common/errors.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/common/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/common/navbar.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/common/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20405" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/VoipServicesController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/DoctorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Patient/PatientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="77" lean-forward="true" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
-          <folding>
-            <element signature="e#48#102#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/patient/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="75" column="69" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2232" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/verify.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/activate.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/GeneralPatients.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/phoneNumber.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/patient/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/changePassword.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+        <state relative-caret-position="576">
+          <caret line="47" column="61" lean-forward="true" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="100" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ActivateController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="500">
+          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/master.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/common/errors.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_11_050259_create_voip_services_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="360">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/patient/profile/editInformation.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/patient/profile/changePassword.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_16_081842_create_purchase_rows_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/profile/editInformation.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Guard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="286">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/profile/changePassword.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="356">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/office/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/lang/fa/validation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="620">
+          <caret line="180" column="39" selection-start-line="180" selection-start-column="39" selection-end-line="180" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/office/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_08_041121_create_doctor_offices_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="600">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/office/addService.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/GeneralDoctors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-724">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        <state relative-caret-position="596">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/DoctorOffice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
-          <folding>
-            <element signature="e#2451#3320#1#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/VoipServices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#47#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/doctor/navbarCart.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="45" selection-start-line="45" selection-end-line="60" selection-end-column="22" />
+        <state relative-caret-position="576">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/office/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="312">
+          <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="58" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/office/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="132" selection-start-line="132" selection-end-line="132" selection-end-column="103" />
+        <state relative-caret-position="48">
+          <caret line="47" column="115" lean-forward="true" selection-start-line="47" selection-start-column="115" selection-end-line="47" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Doctor/requestStoreOffice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding>
-            <element signature="e#47#96#0#PHP" expanded="true" />
+            <element signature="e#44#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user/partials/doctor/navbarPanelUser.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+        <state relative-caret-position="384">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/29-YourAccount-AccountSettings.html">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/UserVirtualNumber.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="1991" column="28" selection-start-line="1991" selection-start-column="28" selection-end-line="1999" selection-end-column="38" />
+        <state relative-caret-position="432">
+          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="e#39#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../32neginApp/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="47" selection-start-line="47" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="e#433#517#0#PHP" />
+            <element signature="e#544#650#0#PHP" />
+            <element signature="e#657#749#0#PHP" />
+            <element signature="e#774#818#0#PHP" />
+            <element signature="e#825#920#0#PHP" />
+            <element signature="e#944#1020#0#PHP" />
+            <element signature="e#1057#1157#0#PHP" />
+            <element signature="e#1164#1264#0#PHP" />
+            <element signature="e#1270#1782#0#PHP" />
+            <element signature="e#1316#1775#0#PHP" />
+            <element signature="e#1356#1451#0#PHP" />
+            <element signature="e#1465#1556#0#PHP" />
+            <element signature="e#1570#1663#0#PHP" />
+            <element signature="e#1677#1764#0#PHP" />
+            <element signature="e#1788#2005#0#PHP" />
+            <element signature="e#2011#2149#0#PHP" />
+            <element signature="e#2156#2210#0#PHP" />
+            <element signature="e#2215#2356#0#PHP" />
+            <element signature="e#2362#2414#0#PHP" />
+            <element signature="e#2419#2566#0#PHP" />
+            <element signature="e#2572#2623#0#PHP" />
+            <element signature="e#2628#2772#0#PHP" />
+            <element signature="e#2778#2830#0#PHP" />
+            <element signature="e#2835#2981#0#PHP" />
+            <element signature="e#2987#3020#0#PHP" />
+            <element signature="e#3266#3783#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_16_081843_create_virtual_numbers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="40" column="103" selection-start-line="40" selection-start-column="93" selection-end-line="40" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/doctor/navbarCart.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/reservedVirtualNumber/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5400">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_16_044514_create_purchases_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/common/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/partials/common/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3072">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/DoctorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/addService.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
+        <state relative-caret-position="72">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_12_060954_create_general_patients_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_11_050259_create_voip_services_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_13_081654_create_reserved_virtual_numbers_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="62" />
+          <folding>
+            <element signature="e#47#75#0#PHP" expanded="true" />
+            <element signature="e#2370#3469#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/payment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PatientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" lean-forward="true" selection-end-line="100" />
+          <folding>
+            <element signature="e#46#95#0#PHP" expanded="true" />
+            <element signature="e#422#626#0#PHP" />
+            <element signature="e#632#900#0#PHP" />
+            <element signature="e#906#1155#0#PHP" />
+            <element signature="e#1162#1247#0#PHP" />
+            <element signature="e#1253#2383#0#PHP" />
+            <element signature="e#2389#2498#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/service/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="80" column="46" lean-forward="true" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/office/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="47" column="128" lean-forward="true" selection-start-line="47" selection-start-column="128" selection-end-line="47" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/ReservedVirtualNumber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="20" selection-start-line="20" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../41-cms-laravel/project/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#33#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../41-cms-laravel/project/app/HasRole.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../41-cms-laravel/project/app/Role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" lean-forward="true" selection-start-line="6" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../41-cms-laravel/project/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../41-cms-laravel/project/app/Permission.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/VirtualNumbers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="48" selection-start-line="48" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/VoipServices.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ReservedVirtualNumberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="6" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/service/parent.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2064">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+          <folding>
+            <element signature="e#506#1792#1#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="56" />
+          <folding>
+            <element signature="e#47#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/service/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="238" column="110" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/service/inactive.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="96" column="45" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
         </state>
       </provider>
     </entry>

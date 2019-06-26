@@ -14,12 +14,16 @@ class SystemController extends Controller
 
     /**
      * ser
-     * @param $phoneUser
-     * @param $userId
-     * @param bool $forgetPassword
+     *
+     * @param        $phoneUser
+     * @param        $userId
+     * @param string $type
+     *
+     * @param null   $parameter
+     *
      * @return bool
      */
-    public function sendSMS($phoneUser, $userId, $forgetPassword = false): ?bool
+    public function sendSMS($phoneUser, $userId, $type = 'activate', $parameter = null): ?bool
     {
         //dd(app_path() . '\Includes\nusoap2.php');
         include(app_path() . '\Includes\nusoap2.php');
@@ -28,11 +32,20 @@ class SystemController extends Controller
         $url = "http://khadamati.pidasms.com/APPs/SMS/WebService.php?wsdl";
         $client = new nusoap_client($url, 'wsdl');
 
-        if (!$forgetPassword) {
-            $text_all = $this->smsActivate($userId);
-        } else {
-            $text_all = $this->smsForgetPassword($userId);
+        switch ($type) {
+            case 'activate':
+                $text_all = $this->smsActivate($userId);
+                break;
+
+            case 'forgetPassword':
+                $text_all = $this->smsForgetPassword($userId);
+                break;
+
+            case 'addUserAdmin':
+                $text_all = $this->smsAddUserAdmin($userId, $parameter);
+                break;
         }
+
 
         $err = $client->getError();
         if ($err) {
@@ -76,7 +89,9 @@ class SystemController extends Controller
 
     /**
      * text and create code for activate user for sms
+     *
      * @param $userId
+     *
      * @return string
      */
     private function smsActivate($userId): string
@@ -89,54 +104,89 @@ class SystemController extends Controller
 
     /**
      * text and create code for forget password for sms
+     *
      * @param $userId
+     *
      * @return string
      */
     private function smsForgetPassword($userId): string
     {
         $text1 = "<< ماتیکان >>";
         $text2 = "کاربر گرامی رمز یک بار مصرف شما : ";
-        $text3 = $this->scopeCreateCode($userId, true);
+        $text3 = $this->scopeCreateCode($userId, 'forgetPassword');
         return $text1 . "\n" . $text2 . $text3;
     }
 
     /**
-     * @param      $userId
-     * @param bool $forgetPassword
+     * text and create code for forget password for sms
+     *
+     * @param $userId
+     * @param $parameter
+     *
+     * @return string
+     */
+    private function smsAddUserAdmin($userId, $parameter): string
+    {
+        $text1 = "<< ماتیکان >>";
+        $text2 = "کاربر گرامی اطلاعات شما درسیستم ثبت شد.";
+        $text3 = "نام کاربری : " . $parameter['username'];
+        $text4 = "رمز ورود : " . $parameter['password'];
+        $this->scopeCreateCode($userId, 'addUserAdmin');
+        return $text1 . "\n" . $text2 . "\n" . $text3 . "\n" . $text4;
+    }
+
+    /**
+     * @param        $userId
+     * @param string $type
      *
      * @return int
      */
-    private function scopeCreateCode($userId, $forgetPassword = false): int
+    private function scopeCreateCode($userId, $type = 'activate'): int
     {
-        if (!$forgetPassword) {
-            $code = $this->code();
-            if(ActivationCode::where('user_id' , $userId)->exists()){
-                ActivationCode::where('user_id' , $userId)->update([
+        $code = $this->code();
+        switch ($type) {
+            case 'activate':
+
+                if (ActivationCode::where('user_id', $userId)->exists()) {
+                    ActivationCode::where('user_id', $userId)->update([
+                        'code' => $code,
+                        'expire' => Carbon::now()->addMinutes(30),
+                        'used' => 0,
+                    ]);
+                } else {
+                    ActivationCode::create([
+                        'user_id' => $userId,
+                        'code' => $code,
+                        'expire' => Carbon::now()->addMinutes(30)
+                    ]);
+                }
+                break;
+
+            case 'forgetPassword':
+                ActivationCode::create([
+                    'user_id' => $userId,
+                    'type' => 'forget',
                     'code' => $code,
                     'expire' => Carbon::now()->addMinutes(30)
                 ]);
-            }else{
+                break;
+
+            case 'addUserAdmin':
                 ActivationCode::create([
                     'user_id' => $userId,
                     'code' => $code,
-                    'expire' => Carbon::now()->addMinutes(30)
+                    'expire' => Carbon::now()->addMinutes(30),
+                    'used' => 1
                 ]);
-            }
-            return $code;
+                break;
         }
 
-        $code = $this->code();
-        ActivationCode::create([
-            'user_id' => $userId,
-            'type' => 'forget',
-            'code' => $code,
-            'expire' => Carbon::now()->addMinutes(30)
-        ]);
         return $code;
     }
 
     /**
      * crate code and check in table ActivationCode
+     *
      * @return int
      */
     private function code(): int
@@ -151,6 +201,7 @@ class SystemController extends Controller
 
     /**
      * @param $phone_number
+     *
      * @return string
      */
     public function validatePhoneNumber($phone_number): string
@@ -161,20 +212,22 @@ class SystemController extends Controller
 
     /**
      * upload image in server
-     * @param $file
-     * @param $imagePath
+     *
+     * @param       $file
+     * @param       $imagePath
      * @param array $sizes
+     *
      * @return mixed
      */
     protected function uploadImages($file, $imagePath, $sizes)
     {
         $year = Carbon::now()->year;
-        $imagePath = "/upload/{$year}/" .$imagePath;
+        $imagePath = "/upload/{$year}/" . $imagePath;
 
         $filename = $file->getClientOriginalName();
 
         $filename = $this->getFileName($filename);
-        $file = $file->move(public_path($imagePath),  $filename);
+        $file = $file->move(public_path($imagePath), $filename);
 
         $url['images'] = $this->resize($file->getRealPath(), $sizes, $imagePath, $filename);
         $url['thumb'] = $url['images'][$sizes[0]];
@@ -184,10 +237,12 @@ class SystemController extends Controller
 
     /**
      * resize upload image
+     *
      * @param $path
      * @param $sizes
      * @param $imagePath
      * @param $filename
+     *
      * @return mixed
      */
     private function resize($path, $sizes, $imagePath, $filename)

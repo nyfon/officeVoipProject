@@ -23,7 +23,7 @@ class CreateGeneralDoctorsTable extends Migration
 
             // grope id
             $table->unsignedInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('general_users');
+            //$table->foreign('user_id')->references('id')->on('general_users');
 
             $table->timestamps();
         });

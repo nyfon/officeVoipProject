@@ -13,9 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
-
-Auth::routes();
+})->name('home');
 
 Route::group(['namespace' => 'Auth'], function () {
 
@@ -43,7 +41,7 @@ Route::group(['namespace' => 'Auth'], function () {
 
 });
 
-Route::group(['namespace' => 'Doctor', 'middleware' => ['auth', 'checkActive'], 'prefix' => 'doctor'], function () {
+Route::group(['namespace' => 'Doctor', 'middleware' => ['auth', 'checkActive', 'checkUser:doctor'], 'prefix' => 'doctor'], function () {
     // User profile
     $this->get('/editInformation', 'DoctorController@editInformation')->name('doctor.editInformation');
     $this->post('/updateInformation', 'DoctorController@updateInformation')->name('doctor.updateInformation');
@@ -53,7 +51,7 @@ Route::group(['namespace' => 'Doctor', 'middleware' => ['auth', 'checkActive'], 
     $this->post('password/change', 'DoctorController@passwordChange')->name('doctor.password.change');
 
     // Offices
-    $this->group(['prefix' => 'office'], function () {
+    $this->group(['prefix' => 'office' ,'middleware' =>['userVirtualNumber']], function () {
         // index
         $this->get('/', 'OfficeController@index')->name('doctor.office.index');
         $this->get('/show/{office}', 'OfficeController@show')->name('doctor.office.show');
@@ -68,33 +66,24 @@ Route::group(['namespace' => 'Doctor', 'middleware' => ['auth', 'checkActive'], 
         // delete
         $this->delete('/{office}/delete', 'OfficeController@destroy')->name('doctor.office.destroy');
 
-        //add Voip Service to office
-        $this->get('/addService/{office}', 'OfficeController@addService')->name('doctor.office.addService');
+
     });
 
     // Offices
     $this->group(['prefix' => 'virtualNumber'], function () {
         // index
         $this->get('/', 'VirtualNumberController@index')->name('doctor.virtualNumber.index');
-        $this->get('/show/{office}', 'VirtualNumberController@show')->name('doctor.virtualNumber.show');
-/*
-        // create
-        $this->get('/create', 'OfficeController@create')->name('doctor.office.create');
-        $this->post('/', 'OfficeController@store')->name('doctor.office.store');
+        $this->post('/addVirtualNumber', 'VirtualNumberController@addVirtualNumber')->name('doctor.virtualNumber.addVirtualNumber');
+        //add Voip service to office
+        $this->get('/addService/{virtualNumber}', 'VirtualNumberController@addServiceShow')->name('doctor.virtualNumber.addServiceShow')->middleware('userVirtualNumber');
+        $this->post('/addService/{virtualNumber}', 'VirtualNumberController@addService')->name('doctor.virtualNumber.addService')->middleware('userVirtualNumber');
+        $this->post('/completeBuyService', 'VirtualNumberController@completeBuyService')->name('doctor.virtualNumber.complete.buy.service')->middleware('userVirtualNumber');
 
-        // edit
-        $this->get('/edit/{office}', 'OfficeController@edit')->name('doctor.office.edit');
-        $this->patch('/{office}/update', 'OfficeController@update')->name('doctor.office.update');
-        // delete
-        $this->delete('/{office}/delete', 'OfficeController@destroy')->name('doctor.office.destroy');
-
-        //add Voip Service to office
-        $this->get('/addService/{office}', 'OfficeController@addService')->name('doctor.office.addService');*/
     });
 
 });
 
-Route::group(['namespace' => 'Patient', 'middleware' => ['auth', 'checkActive'], 'prefix' => 'patient'], function () {
+Route::group(['namespace' => 'Patient', 'middleware' => ['auth', 'checkActive', 'checkUser:patient'], 'prefix' => 'patient'], function () {
     // User profile
     $this->get('/editInformation', 'PatientController@editInformation')->name('patient.editInformation');
     $this->post('/updateInformation', 'PatientController@updateInformation')->name('patient.updateInformation');
@@ -102,6 +91,74 @@ Route::group(['namespace' => 'Patient', 'middleware' => ['auth', 'checkActive'],
     // User change password
     $this->get('password/change', 'PatientController@showPasswordChange')->name('patient.password.change.show');
     $this->post('password/change', 'PatientController@passwordChange')->name('patient.password.change');
+
+});
+
+Route::group(['namespace' => 'Admin', 'middleware' => ['auth', 'checkActive', 'checkUser:admin'], 'prefix' => 'admin'], function () {
+
+    Route::group(['prefix' => 'panel'], function () {
+        $this->get('/', 'PanelController@index')->name('admin.panel.index');
+    });
+
+    // Reserved Virtual Number
+    $this->group(['prefix' => 'reservedVirtualNumber'], function () {
+        // index
+        $this->get('/', 'ReservedVirtualNumberController@index')->name('admin.reservedVirtualNumber.index');
+        $this->get('/show/{reservedVirtualNumber}', 'ReservedVirtualNumberController@show')->name('admin.reservedVirtualNumber.show');
+        $this->post('/', 'ReservedVirtualNumberController@store')->name('admin.reservedVirtualNumber.store');
+
+    });
+
+    // doctor
+    $this->group(['prefix' => 'doctor'], function () {
+        // index
+        $this->get('/', 'DoctorController@index')->name('admin.doctor.index');
+        $this->get('/show/{user}', 'DoctorController@show')->name('admin.doctor.show');
+
+        // create
+        $this->get('/create', 'DoctorController@create')->name('admin.doctor.create');
+        $this->post('/', 'DoctorController@store')->name('admin.doctor.store');
+
+        // edit
+        $this->get('/edit/{user}', 'DoctorController@edit')->name('admin.doctor.edit');
+        $this->patch('/{user}/update', 'DoctorController@update')->name('admin.doctor.update');
+        $this->get('/changeDoctorStatus/{user}/{status}', 'DoctorController@changeDoctorStatus')->name('admin.doctor.changeStatus');
+
+        // delete
+        $this->delete('/{user}/delete', 'DoctorController@destroy')->name('admin.doctor.destroy');
+    });
+
+    // patient
+    $this->group(['prefix' => 'patient'], function () {
+        // index
+        $this->get('/', 'PatientController@index')->name('admin.patient.index');
+        $this->get('/show/{user}', 'PatientController@show')->name('admin.patient.show');
+
+        // create
+        $this->get('/create', 'PatientController@create')->name('admin.patient.create');
+        $this->post('/', 'PatientController@store')->name('admin.patient.store');
+
+        // edit
+        $this->get('/edit/{user}', 'PatientController@edit')->name('admin.patient.edit');
+        $this->get('/changePatientStatus/{user}/{status}', 'PatientController@changePatientStatus')->name('admin.patient.changeStatus');
+        $this->patch('/{user}/update', 'PatientController@update')->name('admin.patient.update');
+
+        // delete
+        $this->delete('/{user}/delete', 'PatientController@destroy')->name('admin.patient.destroy');
+    });
+
+    // service
+    $this->group(['prefix' => 'service'], function () {
+
+        // index
+        $this->get('/{type}', 'ServiceController@index')->name('admin.service.index');
+        $this->get('/show/{service}', 'ServiceController@show')->name('admin.service.show');
+        $this->post('/', 'ServiceController@store')->name('admin.service.store');
+
+        $this->delete('/disabling/{service}', 'ServiceController@disabling')->name('admin.service.disabling');
+
+    });
+
 
 });
 

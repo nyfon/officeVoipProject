@@ -16,7 +16,7 @@ class CreateActivationCodesTable extends Migration
         Schema::create('activation_codes', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('general_users')->onDelete('cascade');
+            //$table->foreign('user_id')->references('id')->on('general_users')->onDelete('cascade');
 
             $table->string('code');
             $table->enum('type' , ['forget' , 'activate'])->default('activate');

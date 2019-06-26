@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\System\SystemController;
 use App\Models\ActivationCode;
 use App\Models\UserGroup;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -45,13 +46,12 @@ class ActivateController extends Controller
         ]);
 
         auth()->user()->update([
-            'isActive' => 'active'
+            'is_status' => User::mergeIsStatus('active')
         ]);
-        $userGroup = UserGroup::where('id' , auth()->user()->user_group_id)->first();
 
-        switch ($userGroup->name){
+        switch (auth()->user()->userGroup->name){
 
-            case 'doctor':
+            case 'Doctor':
                 return redirect(route('doctor.editInformation'));
                 break;
 
@@ -66,6 +66,7 @@ class ActivateController extends Controller
 
     public function resendSms()
     {
+
         $sms = new SystemController();
         $sms->sendSMS(auth()->user()->phone_number, auth()->user()->id);
         return back();

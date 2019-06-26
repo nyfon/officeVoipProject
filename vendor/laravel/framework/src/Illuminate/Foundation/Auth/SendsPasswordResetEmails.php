@@ -38,7 +38,7 @@ trait SendsPasswordResetEmails
         $user = \App\User::where('phone_number' , $phoneNumber)->first();
 
         if(!is_null($user)){
-            $system->sendSMS($user->phone_number, $user->id , true);
+            $system->sendSMS($user->phone_number, $user->id , 'forgetPassword');
             session_start();
             /*session is started if you don't write this line can't use $_Session  global variable*/
             $_SESSION["restPassword"]=$user->phone_number;

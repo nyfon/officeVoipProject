@@ -32,7 +32,7 @@
                         </div>
                     @endif
 
-                    <form class="content" action="{{ route('doctor.password.change') }}" method="post">
+                    <form class="content" action="{{ route('Doctor') }}" method="post">
                         @csrf
                         <div class="row">
                             <div class="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">

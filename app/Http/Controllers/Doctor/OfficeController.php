@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Doctor;
 use App\Http\Controllers\System\SystemController;
 use App\Http\Requests\Doctor\requestStoreOffice;
 use App\Models\DoctorOffice;
+use App\Models\VirtualNumbers;
 use App\Models\VoipServices;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -30,7 +31,8 @@ class OfficeController extends SystemController
      */
     public function create()
     {
-        return view('user.sections.doctor.office.create');
+        $virtualNumbers = auth()->user()->generalDoctor->virtualNumbers;
+        return view('user.sections.doctor.office.create', compact('virtualNumbers'));
     }
 
     /**
@@ -41,11 +43,12 @@ class OfficeController extends SystemController
      */
     public function store(requestStoreOffice $request)
     {
-
         $user = auth()->user()->generalDoctor;
+        $virtualNumbers = VirtualNumbers::where('id', $request['virtualNumber'])->where('status', 4)->first();
         $officeType = DoctorOffice::mergeOfficeType($request['officeType']);
         DoctorOffice::create([
-            'user_id' => $user->id,
+            'doctor_id' => $user->id,
+            'virtual_numbers_id' => $virtualNumbers->id,
             'office_name' => $request['officeName'],
             'mobile_tel' => $this->validatePhoneNumber($request['mobileTel']),
             'office_type' => $officeType,
@@ -54,7 +57,7 @@ class OfficeController extends SystemController
             'address2' => $request['address1'],
         ]);
         alert()->success('مطب جدید با موفقیت ثبت شد.', 'موفق')->persistent('باشه');
-        return redirect(route('user.office.index'));
+        return redirect(route('doctor.office.index'));
     }
 
     /**
@@ -76,7 +79,8 @@ class OfficeController extends SystemController
      */
     public function edit(DoctorOffice $office)
     {
-        return view('user.sections.doctor.office.edit', compact('office'));
+        $virtualNumbers = auth()->user()->generalDoctor->virtualNumbers;
+        return view('user.sections.doctor.office.edit', compact('office' ,'virtualNumbers'));
     }
 
     /**
@@ -89,9 +93,11 @@ class OfficeController extends SystemController
     public function update(requestStoreOffice $request, DoctorOffice $office)
     {
         $officeType = DoctorOffice::mergeOfficeType($request['officeType']);
+        $virtualNumbers = VirtualNumbers::where('id', $request['virtualNumber'])->where('status', 4)->first();
         //$telType = DoctorOffice::mergeTelType($request['telType']);
         $office->update([
             'office_name' => $request['officeName'],
+            'virtual_numbers_id' => $virtualNumbers->id,
             'mobile_tel' => $this->validatePhoneNumber($request['mobileTel']),
             'office_type' => $officeType,
             'tel_type' => $this->checkOfficeType($request['mobileTel']),
@@ -99,7 +105,7 @@ class OfficeController extends SystemController
             'address2' => $request['address1'],
         ]);
         alert()->success('ویرایش مطب با موفقیت ثبت شد.', 'موفق')->persistent('باشه');
-        return redirect(route('user.office.index'));
+        return redirect(route('doctor.office.index'));
     }
 
     /**
@@ -127,11 +133,4 @@ class OfficeController extends SystemController
     }
 
 
-
-    public function addService(DoctorOffice $office){
-        //$generalDoctor = auth()->user()->generalDoctor;
-        $voipServices = VoipServices::where('is_active', VoipServices::mergeIsActive('active'))->get();
-        //$offices = DoctorOffice::where('user_id', $generalDoctor->id)->select(['id' , 'name'])->get();
-        return view('user.sections.doctor.office.addService', compact('voipServices' , 'office'));
-    }
 }

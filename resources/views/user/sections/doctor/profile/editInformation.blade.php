@@ -38,13 +38,6 @@
                                         <label class="control-label">نام خانوادگی</label>
                                         <input class="form-control" placeholder="" type="text" name="family" {{ ($user->generalDoctor->family !== null)? 'value='.$user->generalDoctor->family  : '' }} >
                                     </div>
-
-
-                                    <div class="form-group label-floating">
-                                        <label class="control-label">شماره تماس </label>
-                                        <input class="form-control" placeholder="وارد نشده" type="text" name="phoneNumber" {{ ($user->phone_number !== null)? 'value='.$user->normalizePhoneNumber()  : '' }}>
-                                    </div>
-
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

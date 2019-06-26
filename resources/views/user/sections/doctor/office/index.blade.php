@@ -68,21 +68,8 @@
                                         </div>
                                     </div>
 
-
-
                                     <div class="control-block-button">
-                                        <a href="{{ route('doctor.office.addService' , $office) }}" class="  btn btn-control bg-blue" data-toggle="modal" data-target="#create-friend-group-add-friends">
-                                            <svg class="olymp-happy-faces-icon">
-                                                <use xlink:href="/frontEnd/svg-icons/sprites/icons.svg#olymp-happy-faces-icon"></use>
-                                            </svg>
-                                        </a>
-
-                                        <a href="{{ route('doctor.office.edit' , $office) }}" class="btn btn-control btn-grey-lighter">
-                                            <svg class="olymp-settings-icon">
-                                                <use xlink:href="/frontEnd/svg-icons/sprites/icons.svg#olymp-settings-icon"></use>
-                                            </svg>
-                                        </a>
-
+                                        <a href="{{ route('doctor.office.edit' , $office) }}" class="btn btn-grey-lighter">ویرایش مطب</a>
                                     </div>
                                 </div>
                             </div>

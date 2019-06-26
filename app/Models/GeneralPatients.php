@@ -13,9 +13,17 @@ class GeneralPatients extends Model
     /**
      * Get the post that owns the comment.
      */
-    public function User()
+    public function User(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function fullname(){
+        if(($this->name !== null)&&($this->family !== null)){
+
+            return $this->name.' '.$this->family;
+        }
+        return 'وارد نشده';
     }
 
 }

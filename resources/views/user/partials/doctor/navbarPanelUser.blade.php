@@ -21,7 +21,7 @@
                     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                         <ul class="your-profile-menu">
                             <li>
-                                <a href="{{ route('doctor.editInformation') }}">اطلاعات شخصی</a>
+                                <a href="{{ route('admin.doctor.index') }}">اطلاعات شخصی</a>
                             </li>
                             <li>
                                 <a href="{{ route('doctor.password.change.show') }}">تغییر رمز عبور </a>
@@ -38,6 +38,8 @@
             <div class="ui-block-title">
                 <a href="{{ route('doctor.virtualNumber.index') }}" class="h6 title">شماره مجازی</a>
             </div>
+
+
   {{--          <div class="ui-block-title">
                 <a href="{{ route('doctor.voipServices.index') }}" class="h6 title">سرویس ها</a>
             </div>--}}

@@ -46,10 +46,12 @@
 <script defer src="{{ url('/frontEnd/fonts/fontawesome-all.js')}}"></script>
 
 <script src="{{ url('/frontEnd/Bootstrap/dist/js/bootstrap.bundle.js')}}"></script>
+@yield('js')
 
 <!-- Include this after the sweet alert js file -->
 <script src="{{ url('js/sweetalert2.min.js') }}"></script>
 @include('sweet::alert')
+
 
 </body>
 

@@ -178,6 +178,6 @@ return array(
         'medicalSystemNumber'=>'شماره نظام پزشکی',
         'officeName'=>'نام مطب',
         'mobileTel'=>'شماره موبایل',
-
+        'virtualNumber'=>'شماره مجازی',
     ),
 );

@@ -26,7 +26,9 @@ class CreateDoctorOfficesTable extends Migration
 
             // general doctors id
             $table->unsignedInteger('doctor_id');
-            $table->foreign('doctor_id')->references('id')->on('general_doctors');
+            //$table->foreign('doctor_id')->references('id')->on('general_doctors');
+
+            $table->unsignedInteger('virtual_numbers_id');
 
             $table->timestamps();
         });

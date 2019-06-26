@@ -90,8 +90,8 @@ class RegisterController extends Controller
             'username' => $data['username'],
             'acl' => [],
             'password' => Hash::make($data['password']),
-            'isActive' => 'inactive',
-            'phone_number' => $this->validatePhoneNumber($data['phone_number']),
+            'is_status' => User::mergeIsStatus('onactive'),
+            'phone_number' => $data['phone_number'],
             'user_group_id' => $grope->id,
         ]);
 
@@ -120,14 +120,5 @@ class RegisterController extends Controller
 
     }
 
-    /**
-     * @param $phone_number
-     * @return string
-     */
-    private function validatePhoneNumber($phone_number): string
-    {
-        $phone_number = substr($phone_number, 1);
-        return '0098' . $phone_number;
-    }
 
 }

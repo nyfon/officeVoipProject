@@ -31,7 +31,7 @@
                 </div>
             </div>
   {{--          <div class="ui-block-title">
-                <a href="{{ route('doctor.voipServices.index') }}" class="h6 title">سرویس ها</a>
+                <a href="{{ route('Doctor.voipServices.index') }}" class="h6 title">سرویس ها</a>
             </div>--}}
             <div class="ui-block-title">
                 <a href="35-YourAccount-FriendsRequests.html" class="h6 title">درخواست دوستی </a>

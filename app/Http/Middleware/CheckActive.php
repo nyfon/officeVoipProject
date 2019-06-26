@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\User;
 use Closure;
 
 class CheckActive
@@ -16,7 +17,7 @@ class CheckActive
     public function handle($request, Closure $next)
     {
         if(auth()->check()){
-            if(auth()->user()->isActive === 'active'){
+            if(auth()->user()->is_status === User::mergeIsStatus('active')){
                 return $next($request);
             }
             return redirect(route('activate.show'));

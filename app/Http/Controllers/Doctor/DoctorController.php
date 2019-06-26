@@ -17,7 +17,7 @@ class DoctorController extends Controller
     {
         $user = auth()->user();
         //dd($user->generalDoctor);
-        return view('user.sections.doctor.profile.editInformation', compact('user'));
+        return view('user.sections.Doctor.profile.editInformation', compact('user'));
     }
 
     /**
@@ -29,7 +29,6 @@ class DoctorController extends Controller
     {
 
         auth()->user()->update([
-            'phone_number' => $this->validatePhoneNumber($request['phoneNumber']),
             'description' => $request['description'],
         ]);
 
@@ -60,7 +59,7 @@ class DoctorController extends Controller
      */
     public function showPasswordChange()
     {
-        return view('user.sections.doctor.profile.changePassword');
+        return view('user.sections.Doctor.profile.changePassword');
     }
 
     /**

@@ -20,14 +20,13 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('phone_number' , 15);
             $table->string('description' , 250)->nullable();
-            $table->enum('isActive' , ['active' , 'inactive']);
+            $table->tinyInteger('is_status')->comment('1:onactive 2:active 3:deleted 4:lock');
             $table->text('acl');
 
             // grope id
             $table->unsignedInteger('user_group_id');
-            $table->foreign('user_group_id')->references('id')->on('user_group');
+            //$table->foreign('user_group_id')->references('id')->on('user_group');
 
-            $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
