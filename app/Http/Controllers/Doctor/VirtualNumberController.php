@@ -2,17 +2,22 @@
 
 namespace App\Http\Controllers\Doctor;
 
+use App\Http\Controllers\System\SystemController;
 use App\Models\PurchaseRows;
 use App\Models\Purchases;
 use App\Models\ReservedVirtualNumber;
+use App\Models\UserActiveServices;
 use App\Models\VirtualNumbers;
+use App\Models\VoiceCategories;
+use App\Models\VoiceFiles;
+use App\Models\VoicesOfServices;
 use App\Models\VoipServices;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use Morilog\Jalali\Jalalian;
 
-class VirtualNumberController extends Controller
+use Illuminate\Http\Request;
+
+
+class VirtualNumberController extends SystemController
 {
     public function index()
     {
@@ -25,7 +30,7 @@ class VirtualNumberController extends Controller
             $virtualNumbers = auth()->user()->generalDoctor->virtualNumbers;
         }
 
-        return view('user.sections.Doctor.virtualNumber.index', compact('voipServices', 'virtualNumbers'));
+        return view('user.doctor.sections.virtualNumber.index', compact('voipServices', 'virtualNumbers'));
     }
 
     public function addVirtualNumber(Request $request)
@@ -108,8 +113,10 @@ class VirtualNumberController extends Controller
     public function addServiceShow(VirtualNumbers $virtualNumber){
         //$generalDoctor = auth()->user()->generalDoctor;
         $voipServices = VoipServices::where('is_active', VoipServices::mergeIsActive('active'))->where('type', VoipServices::mergeType('voip_services'))->get();
+        $activeServices = UserActiveServices::where('virtual_numbers_id', $virtualNumber->id)->where('expiration_date' ,'>=', Carbon::now())->get();
+
         //$offices = DoctorOffice::where('user_id', $generalDoctor->id)->select(['id' , 'name'])->get();
-        return view('user.sections.doctor.virtualNumber.addService', compact('voipServices' , 'virtualNumber'));
+        return view('user.doctor.sections.virtualNumber.addService', compact('voipServices' , 'virtualNumber', 'activeServices'));
     }
 
     public function addService(VirtualNumbers $virtualNumber ,Request $request){
@@ -143,7 +150,7 @@ class VirtualNumberController extends Controller
             ]);
         }
         //alert()->success('کاربر گرامی درخواست شما با موفقیت انجام شد.', 'درخواست موفق')->persistent('باشه');
-        return view('user.sections.doctor.virtualNumber.payment')->with(
+        return view('user.doctor.sections.virtualNumber.payment')->with(
             [
                 'purchases' => $purchases
             ]
@@ -163,10 +170,78 @@ class VirtualNumberController extends Controller
         ]);
 
         $purchases = Purchases::where('id' ,$request['purchase'])->first();
+
+        foreach ($purchases->purchaseRows as $purchaseRow){
+            UserActiveServices::create([
+                'is_active'     => 2,
+                'expiration_date' => $purchaseRow->expire_time_stamp,
+                'purchase_id'   => $purchases->id,
+                'services_id'   => $purchaseRow->voip_services_id,
+                'service_name'  => $purchaseRow->voipService->service_name,
+                'mobile_tel'    => auth()->user()->phone_number,
+                'virtual_numbers_id'    => $purchases->virtual_numbers_id,
+                'virtual_number'    => $purchases->virtualNumber->virtual_number,
+            ]);
+        }
+
         $purchases->update([
             'state' => 4,
         ]);
 
         return redirect(route('doctor.virtualNumber.index'));
     }
+
+    public function sendVoice(VoipServices $service,Request $request){
+        $activeServices = UserActiveServices::where('services_id', $service->id)->where('expiration_date' ,'>=', Carbon::now())->first();
+
+        if($activeServices === null){
+            alert()->error('شما اجازه این کار را ندارید', 'ارسال ناموفق')->persistent('باشه');
+            return back();
+        }
+
+        $catgory = VoiceCategories::where('name','voise_users')->where('is_active', 2)->first();
+
+        if ($catgory === null){
+            alert()->success('دسته وارد نشده', 'ارسال موفق')->persistent('باشه');
+            return back();
+        }
+
+        $this->validateSendVoice($request);
+
+        $fileUplodaed = $this->uploadFile($request['voice'],'/voice/');
+
+        $realPath = $fileUplodaed->getRealPath();
+
+        $realPath =str_replace("C:\Users\mohamad\Desktop\officeVoipProject\public", "", $realPath);
+
+        $voipeFile = VoiceFiles::create([
+            'file_name' => $fileUplodaed->getFilename(),
+            'location' => $realPath,
+            'is_personal' => 2,
+            'is_active' => 1,
+            'is_personal_accepted' => 1,
+            'uploader_id' => auth()->user()->id,
+            'upload_time' => now(),
+            'voice_categories_id' => $catgory->id,
+        ]);
+
+        VoicesOfServices::create([
+            'active_services_id' => $activeServices->id,
+            'voice_files_id' => $voipeFile->id,
+            'is_active' => 1,
+        ]);
+
+        alert()->success('درخواست شما باموفقیت ثبت شده', 'ارسال موفق')->persistent('باشه');
+        return back();
+    }
+
+    private function validateSendVoice(Request $request){
+
+       return $request->validate([
+            'voice' => 'required|mimes:application/octet-stream,audio/mpeg,mpga,mp3,wav|max:4000'
+        ]);
+
+
+    }
+
 }

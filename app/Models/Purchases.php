@@ -15,4 +15,24 @@ class Purchases extends Model
     {
         return $this->hasMany(PurchaseRows::class);
     }
+
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function voipService(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(VoipServices::class ,'voip_services_id');
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function virtualNumber(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(VirtualNumbers::class ,'virtual_numbers_id');
+    }
+
+
+
 }

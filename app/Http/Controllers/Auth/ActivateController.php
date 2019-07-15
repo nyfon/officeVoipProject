@@ -51,7 +51,7 @@ class ActivateController extends Controller
 
         switch (auth()->user()->userGroup->name){
 
-            case 'Doctor':
+            case 'doctor':
                 return redirect(route('doctor.editInformation'));
                 break;
 

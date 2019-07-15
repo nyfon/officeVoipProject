@@ -47,6 +47,14 @@ class VirtualNumbers extends Model
     }
 
     /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function activeServices(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(UserActiveServices::class, 'virtual_numbers_id');
+    }
+
+    /**
      * convert date Lunar date to Shams history
      *
      * @param $date

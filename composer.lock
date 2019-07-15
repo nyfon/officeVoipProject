@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "011cc8019ceba2e8c105f31315fec6dd",
+    "content-hash": "fa2cfcb039bb26874462e221b789276d",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -2232,6 +2232,58 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "sopamo/laravel-filepond",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Sopamo/laravel-filepond.git",
+                "reference": "be2e53089484859de60e686f317cb23acb019e65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Sopamo/laravel-filepond/zipball/be2e53089484859de60e686f317cb23acb019e65",
+                "reference": "be2e53089484859de60e686f317cb23acb019e65",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "php": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Sopamo\\LaravelFilepond\\LaravelFilepondServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sopamo\\LaravelFilepond\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Mohr",
+                    "email": "p.mohr@sopamo.de"
+                }
+            ],
+            "description": "Laravel backend module for filepond uploads",
+            "keywords": [
+                "filepond",
+                "image",
+                "laravel",
+                "php",
+                "upload"
+            ],
+            "time": "2019-02-28T15:07:33+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

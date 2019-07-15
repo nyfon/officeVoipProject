@@ -6,7 +6,9 @@ use App\Models\ActivationCode;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 use nusoap_client;
+use function PHPSTORM_META\type;
 
 
 class SystemController extends Controller
@@ -233,6 +235,50 @@ class SystemController extends Controller
         $url['thumb'] = $url['images'][$sizes[0]];
 
         return $url;
+    }
+
+    /**
+     * upload image in server
+     *
+     * @param       $file
+     * @param       $imagePath
+     * @param array $sizes
+     *
+     * @return mixed
+     */
+    protected function uploadFile($file, $pathFile)
+    {
+        $year = Carbon::now()->year;
+        $pathFile = "/upload/{$year}/" . $pathFile;
+
+        $filename = $file->getClientOriginalName();
+
+        $filename = $this->getFileName($filename);
+        $file = $file->move(public_path($pathFile), $filename);
+
+        return $file;
+    }
+
+    private function getFileName($file){
+
+        $file = explode( '.',$file);
+        $filename = $file[0];
+        $filePostfix = end($file);
+
+        $filename = str_replace(" ", "", $filename);
+        $filename = str_replace("\n", "", $filename);
+        $filename = str_replace("\\", "", $filename);
+
+        if(strlen( $filename) >= 5){
+            $filename = str_limit( $filename , 5 ,'');
+        }
+
+        $timestamp = Carbon::now()->timestamp;
+        $random = Str::random(5);
+
+        $filename = "{$timestamp}_{$random}_" .$filename;
+
+        return $filename. '.' .$filePostfix;
     }
 
     /**

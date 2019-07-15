@@ -83,6 +83,7 @@ class ComposerStaticInite6e187deeb4ce9f7aaa3e30700f51107
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Sopamo\\LaravelFilepond\\' => 23,
         ),
         'R' => 
         array (
@@ -273,6 +274,10 @@ class ComposerStaticInite6e187deeb4ce9f7aaa3e30700f51107
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Sopamo\\LaravelFilepond\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sopamo/laravel-filepond/src',
         ),
         'Ramsey\\Uuid\\' => 
         array (
@@ -476,6 +481,7 @@ class ComposerStaticInite6e187deeb4ce9f7aaa3e30700f51107
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Doctor\\DoctorController' => __DIR__ . '/../..' . '/app/Http/Controllers/Doctor/DoctorController.php',
         'App\\Http\\Controllers\\Doctor\\OfficeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Doctor/OfficeController.php',
+        'App\\Http\\Controllers\\Doctor\\ScheduleController' => __DIR__ . '/../..' . '/app/Http/Controllers/Doctor/ScheduleController.php',
         'App\\Http\\Controllers\\Doctor\\VirtualNumberController' => __DIR__ . '/../..' . '/app/Http/Controllers/Doctor/VirtualNumberController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\Patient\\PatientController' => __DIR__ . '/../..' . '/app/Http/Controllers/Patient/PatientController.php',
@@ -506,9 +512,17 @@ class ComposerStaticInite6e187deeb4ce9f7aaa3e30700f51107
         'App\\Models\\PurchaseRows' => __DIR__ . '/../..' . '/app/Models/PurchaseRows.php',
         'App\\Models\\Purchases' => __DIR__ . '/../..' . '/app/Models/Purchases.php',
         'App\\Models\\ReservedVirtualNumber' => __DIR__ . '/../..' . '/app/Models/ReservedVirtualNumber.php',
+        'App\\Models\\UserActiveServices' => __DIR__ . '/../..' . '/app/Models/UserActiveServices.php',
         'App\\Models\\UserGroup' => __DIR__ . '/../..' . '/app/Models/UserGroup.php',
         'App\\Models\\VirtualNumbers' => __DIR__ . '/../..' . '/app/Models/VirtualNumbers.php',
+        'App\\Models\\VoiceCategories' => __DIR__ . '/../..' . '/app/Models/VoiceCategories.php',
+        'App\\Models\\VoiceFiles' => __DIR__ . '/../..' . '/app/Models/VoiceFiles.php',
+        'App\\Models\\VoicesOfServices' => __DIR__ . '/../..' . '/app/Models/VoicesOfServices.php',
         'App\\Models\\VoipServices' => __DIR__ . '/../..' . '/app/Models/VoipServices.php',
+        'App\\Models\\WorkflowProcessInstances' => __DIR__ . '/../..' . '/app/Models/WorkflowProcessInstances.php',
+        'App\\Models\\WorkflowProcesses' => __DIR__ . '/../..' . '/app/Models/WorkflowProcesses.php',
+        'App\\Models\\WorkflowTaskInstances' => __DIR__ . '/../..' . '/app/Models/WorkflowTaskInstances.php',
+        'App\\Models\\WorkflowTasks' => __DIR__ . '/../..' . '/app/Models/WorkflowTasks.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -3658,6 +3672,11 @@ class ComposerStaticInite6e187deeb4ce9f7aaa3e30700f51107
         'SebastianBergmann\\Timer\\RuntimeException' => __DIR__ . '/..' . '/phpunit/php-timer/src/RuntimeException.php',
         'SebastianBergmann\\Timer\\Timer' => __DIR__ . '/..' . '/phpunit/php-timer/src/Timer.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Sopamo\\LaravelFilepond\\Exceptions\\InvalidPathException' => __DIR__ . '/..' . '/sopamo/laravel-filepond/src/Exceptions/InvalidPathException.php',
+        'Sopamo\\LaravelFilepond\\Exceptions\\LaravelFilepondException' => __DIR__ . '/..' . '/sopamo/laravel-filepond/src/Exceptions/LaravelFilepondException.php',
+        'Sopamo\\LaravelFilepond\\Filepond' => __DIR__ . '/..' . '/sopamo/laravel-filepond/src/Filepond.php',
+        'Sopamo\\LaravelFilepond\\Http\\Controllers\\FilepondController' => __DIR__ . '/..' . '/sopamo/laravel-filepond/src/Http/Controllers/FilepondController.php',
+        'Sopamo\\LaravelFilepond\\LaravelFilepondServiceProvider' => __DIR__ . '/..' . '/sopamo/laravel-filepond/src/LaravelFilepondServiceProvider.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => __DIR__ . '/..' . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
         'Symfony\\Component\\Console\\CommandLoader\\ContainerCommandLoader' => __DIR__ . '/..' . '/symfony/console/CommandLoader/ContainerCommandLoader.php',

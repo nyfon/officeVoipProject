@@ -16,12 +16,13 @@ class PurchaseRows extends Model
         return $this->belongsTo(Purchases::class ,'purchases_id');
     }
 
+
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function voipService(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    public function voipService(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsToMany(VoipServices::class ,'voip_services_id');
+        return $this->belongsTo(VoipServices::class ,'voip_services_id');
     }
 
 }

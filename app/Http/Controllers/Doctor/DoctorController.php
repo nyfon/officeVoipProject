@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class DoctorController extends Controller
 {
+    public function panel(){
+        return view('user.doctor.sections.profile.panel');
+    }
+
     /**
      * show form update user data
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
@@ -17,7 +21,7 @@ class DoctorController extends Controller
     {
         $user = auth()->user();
         //dd($user->generalDoctor);
-        return view('user.sections.Doctor.profile.editInformation', compact('user'));
+        return view('user.doctor.sections.profile.editInformation', compact('user'));
     }
 
     /**
@@ -59,7 +63,7 @@ class DoctorController extends Controller
      */
     public function showPasswordChange()
     {
-        return view('user.sections.Doctor.profile.changePassword');
+        return view('user.doctor.sections.profile.changePassword');
     }
 
     /**

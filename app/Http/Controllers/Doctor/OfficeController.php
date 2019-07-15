@@ -21,7 +21,7 @@ class OfficeController extends SystemController
     {
         $generalDoctor = auth()->user()->generalDoctor;
         $offices = DoctorOffice::where('doctor_id', $generalDoctor->id)->get();
-        return view('user.sections.doctor.office.index', compact('offices'));
+        return view('user.doctor.sections.office.index', compact('offices'));
     }
 
     /**
@@ -32,7 +32,7 @@ class OfficeController extends SystemController
     public function create()
     {
         $virtualNumbers = auth()->user()->generalDoctor->virtualNumbers;
-        return view('user.sections.doctor.office.create', compact('virtualNumbers'));
+        return view('user.doctor.sections.office.create', compact('virtualNumbers'));
     }
 
     /**
@@ -80,7 +80,7 @@ class OfficeController extends SystemController
     public function edit(DoctorOffice $office)
     {
         $virtualNumbers = auth()->user()->generalDoctor->virtualNumbers;
-        return view('user.sections.doctor.office.edit', compact('office' ,'virtualNumbers'));
+        return view('user.doctor.sections.office.edit', compact('office' ,'virtualNumbers'));
     }
 
     /**
@@ -131,6 +131,8 @@ class OfficeController extends SystemController
         }
         return DoctorOffice::mergeTelType('telephone');
     }
+
+
 
 
 }

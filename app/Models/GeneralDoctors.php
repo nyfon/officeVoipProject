@@ -36,4 +36,5 @@ class GeneralDoctors extends Model
     }
 
 
+
 }

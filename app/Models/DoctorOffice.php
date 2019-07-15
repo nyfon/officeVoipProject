@@ -42,4 +42,8 @@ class DoctorOffice extends Model
         $phone_number = substr($this->mobile_tel , 4);
         return '0'. $phone_number;
     }
+
+    public function schedule(){
+        return $this->hasOne(OfficeScheduleConfigs::class,'office_id');
+    }
 }

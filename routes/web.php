@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+/*  Route Auth */
 Route::group(['namespace' => 'Auth'], function () {
 
     // Authentication Routes...
@@ -40,9 +41,12 @@ Route::group(['namespace' => 'Auth'], function () {
     $this->post('password/change', 'ForgotPasswordController@passwordChange')->name('password.change');
 
 });
+/*  /Route Auth */
 
-Route::group(['namespace' => 'Doctor', 'middleware' => ['auth', 'checkActive', 'checkUser:doctor'], 'prefix' => 'doctor'], function () {
+/*  Route doctor */
+Route::group(['namespace' => 'doctor', 'middleware' => ['auth', 'checkActive', 'checkUser:doctor'], 'prefix' => 'doctor'], function () {
     // User profile
+    $this->get('/panel', 'DoctorController@panel')->name('doctor.panel');
     $this->get('/editInformation', 'DoctorController@editInformation')->name('doctor.editInformation');
     $this->post('/updateInformation', 'DoctorController@updateInformation')->name('doctor.updateInformation');
 
@@ -63,13 +67,14 @@ Route::group(['namespace' => 'Doctor', 'middleware' => ['auth', 'checkActive', '
         // edit
         $this->get('/edit/{office}', 'OfficeController@edit')->name('doctor.office.edit');
         $this->patch('/{office}/update', 'OfficeController@update')->name('doctor.office.update');
+
         // delete
         $this->delete('/{office}/delete', 'OfficeController@destroy')->name('doctor.office.destroy');
 
 
     });
 
-    // Offices
+    // virtualNumber
     $this->group(['prefix' => 'virtualNumber'], function () {
         // index
         $this->get('/', 'VirtualNumberController@index')->name('doctor.virtualNumber.index');
@@ -79,10 +84,29 @@ Route::group(['namespace' => 'Doctor', 'middleware' => ['auth', 'checkActive', '
         $this->post('/addService/{virtualNumber}', 'VirtualNumberController@addService')->name('doctor.virtualNumber.addService')->middleware('userVirtualNumber');
         $this->post('/completeBuyService', 'VirtualNumberController@completeBuyService')->name('doctor.virtualNumber.complete.buy.service')->middleware('userVirtualNumber');
 
+        $this->post('/sendVoice/{service}', 'VirtualNumberController@sendVoice')->name('doctor.virtualNumber.sendVoice')->middleware('userVirtualNumber');
+
+    });
+
+    // Schedule
+    $this->group(['prefix' => 'schedule'], function () {
+        // index
+        $this->get('/', 'ScheduleController@index')->name('doctor.schedule.index');
+
+        $this->get('/{office}', 'ScheduleController@create')->name('doctor.office.schedule.show');
+        $this->post('/{office}', 'ScheduleController@store')->name('doctor.schedule.store');
+        /*     $this->post('/addVirtualNumber', 'VirtualNumberController@addVirtualNumber')->name('doctor.Schedule.addVirtualNumber');
+        //add Voip service to office
+        $this->get('/addService/{Schedule}', 'VirtualNumberController@addServiceShow')->name('doctor.Schedule.addServiceShow')->middleware('userVirtualNumber');
+        $this->post('/addService/{Schedule}', 'VirtualNumberController@addService')->name('doctor.Schedule.addService')->middleware('userVirtualNumber');
+        $this->post('/completeBuyService', 'VirtualNumberController@completeBuyService')->name('doctor.Schedule.complete.buy.service')->middleware('userVirtualNumber');*/
+
     });
 
 });
+/*  /Route doctor */
 
+/*  Route Patient */
 Route::group(['namespace' => 'Patient', 'middleware' => ['auth', 'checkActive', 'checkUser:patient'], 'prefix' => 'patient'], function () {
     // User profile
     $this->get('/editInformation', 'PatientController@editInformation')->name('patient.editInformation');
@@ -93,7 +117,9 @@ Route::group(['namespace' => 'Patient', 'middleware' => ['auth', 'checkActive', 
     $this->post('password/change', 'PatientController@passwordChange')->name('patient.password.change');
 
 });
+/*  /Route Patient */
 
+/*  Route Admin */
 Route::group(['namespace' => 'Admin', 'middleware' => ['auth', 'checkActive', 'checkUser:admin'], 'prefix' => 'admin'], function () {
 
     Route::group(['prefix' => 'panel'], function () {
@@ -161,6 +187,7 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['auth', 'checkActive', 'c
 
 
 });
+/*  /Route A */
 
 Route::get('/home', 'HomeController@index')->name('home');
 

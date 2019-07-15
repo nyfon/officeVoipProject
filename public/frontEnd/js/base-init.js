@@ -161,19 +161,9 @@ var CRUMINA = {};
         return false;
     });
 
-	// Close on "Esc" click
-    $window.keydown(function (eventObject) {
-        if (eventObject.which == 27 && $sidebar.is(':visible')) {
-            $sidebar.removeClass('open');
-        }
-    });
 
-    // Close on click outside elements.
-    $document.on('click', function (event) {
-        if (!$(event.target).closest($sidebar).length && $sidebar.is(':visible')) {
-            $sidebar.removeClass('open');
-        }
-    });
+
+
 
     // Toggle inline popups
 
@@ -197,7 +187,7 @@ var CRUMINA = {};
 			$('.profile-menu').removeClass('expanded-menu');
 			$('.popup-chat-responsive').removeClass('open-chat');
 			$('.profile-settings-responsive').removeClass('open');
-			$('.header-menu').removeClass('open');
+
         }
     });
 
@@ -207,7 +197,7 @@ var CRUMINA = {};
             $popup.removeClass('open');
             $body.removeClass('overlay-enable');
 			$('.profile-menu').removeClass('expanded-menu');
-			$('.header-menu').removeClass('open');
+
         }
     });
 
@@ -253,10 +243,7 @@ var CRUMINA = {};
 		return false
 	});
 
-	$(".js-close-responsive-menu").on('click', function () {
-		$('.header-menu').removeClass('open');
-		return false
-	});
+
 
 
 	/* -----------------------------

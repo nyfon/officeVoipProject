@@ -17,7 +17,7 @@ class PatientController extends Controller
     {
         $user = auth()->user();
         //dd($user->generalDoctor);
-        return view('user.sections.patient.profile.editInformation', compact('user'));
+        return view('user.patient.sections.profile.editInformation', compact('user'));
     }
 
     /**
@@ -60,7 +60,7 @@ class PatientController extends Controller
      */
     public function showPasswordChange()
     {
-        return view('user.sections.patient.profile.changePassword');
+        return view('user.patient.sections.profile.changePassword');
     }
 
     /**

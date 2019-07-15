@@ -118,6 +118,16 @@ class User extends Authenticatable
         return $this->hasOne(GeneralDoctors::class);
     }
 
+    public function doctorFullName()
+    {
+
+
+        if($this->getUserGroup()->name && $this->getUserGroup()->family){
+            return    $this->getUserGroup()->name.' '.$this->getUserGroup()->family;
+        }
+        return 'وارد نشده';
+    }
+
     /**
      * Get the general patient for user.
      */
@@ -161,6 +171,46 @@ class User extends Authenticatable
 
         }
     }
+
+    public function skillUserInfrmtion(){
+        $skillNumber = 0;
+
+        if($this->userGroup->name === 'doctor'){
+            $skills = [
+                'name',
+                'family',
+                'mail',
+                'medical_system_number',
+            ];
+        }elseif ($this->userGroup->name === 'patient'){
+            $skills = [
+                'name',
+                'family',
+                'address1',
+                'address2',
+            ];
+        }
+
+        $count = 100/count($skills);
+
+        foreach ($skills as $skill){
+            $userData = $this->getUserGroup();
+            if($userData[$skill] !== null){
+                $skillNumber += $count;
+            }
+        }
+
+        return $skillNumber;
+    }
+
+    public function getUserGroup(){
+        if($this->userGroup->name === 'doctor'){
+            return $this->generalDoctor;
+        }
+        return $this->generalPatient;
+    }
+
+
 
 
 }
