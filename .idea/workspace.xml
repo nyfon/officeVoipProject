@@ -2,77 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ce1b20c-ce91-47cb-8388-6dd86a3bcf4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Doctor/ScheduleController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/UserActiveServices.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/WorkflowProcessInstances.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/WorkflowProcesses.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/WorkflowTaskInstances.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/WorkflowTasks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_07_050634_create_workflow_processes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_07_050831_create_workflow_tasks_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_07_050843_create_workflow_process_instances_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_07_050857_create_workflow_task_instances_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_07_053943_create_user_active_services_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/frontEnd/css/mdb4.8.3.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/frontEnd/css/schedule.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/frontEnd/img/back2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/frontEnd/img/backg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/frontEnd/img/generic-user-purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/frontEnd/img/icons8-hospital-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/frontEnd/js/mdb.160.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/frontEnd/js/schedule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/frontEnd/js/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/officeVoipProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/officeVoipProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ActivateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ActivateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Doctor/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Doctor/DoctorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Patient/PatientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Patient/PatientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/DoctorOffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/DoctorOffice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/GeneralDoctors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/GeneralDoctors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/OfficeScheduleConfigs.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/OfficeScheduleConfigs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/PurchaseRows.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PurchaseRows.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Purchases.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Purchases.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/VirtualNumbers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/VirtualNumbers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_26_090306_create_office_schedule_configs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_26_090306_create_office_schedule_configs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/Bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/Bootstrap/dist/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontEnd/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontEnd/js/base-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontEnd/js/base-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/changePassword.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/changePassword.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/patient/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/common/errors.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/common/footer.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/common/header.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/doctor/navbarCart.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/doctor/navbarPanelUser.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/patient/navbarPanelUser.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/create.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/edit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/office/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/profile/changePassword.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/profile/editInformation.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/addService.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/doctor/virtualNumber/payment.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/patient/profile/changePassword.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/sections/patient/profile/editInformation.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/doctor/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/doctor/partials/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -176,89 +113,99 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/routes.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/TicketsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/Views/bootstrap4/admin/agent/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-576" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/Views/bootstrap4/layouts/master.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+            <state relative-caret-position="360">
+              <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+              <folding>
+                <element signature="e#47#75#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/ViewComposers/TicketItComposer.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/ticket/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="-72">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_102700_create_voice_files_table.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="936">
+              <caret line="112" column="74" selection-start-line="112" selection-start-column="74" selection-end-line="112" selection-end-column="74" />
+              <folding>
+                <element signature="e#524#1810#1#PHP" />
+                <element signature="e#2637#3362#1#PHP" />
+                <element signature="e#3435#4401#1#PHP" />
+                <element signature="e#4464#5436#1#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/VoiceFiles.php">
+        <entry file="file://$PROJECT_DIR$/public/frontEnd/css/main.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="143400">
+              <caret line="5975" column="16" selection-start-line="5975" selection-start-column="16" selection-end-line="5975" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/VoicesOfServices.php">
+        <entry file="file://$PROJECT_DIR$/app/Models/UserTicket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="912">
+              <caret line="40" column="74" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="74" />
+              <folding>
+                <element signature="e#30#43#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/VoiceCategories.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="2712">
+              <caret line="113" column="20" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_104955_create_voices_of_services_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/partials/navbar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="7752">
+              <caret line="323" column="75" selection-start-line="323" selection-start-column="75" selection-end-line="323" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/partials/header.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/partials/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6024">
-              <caret line="257" selection-start-line="257" selection-end-line="257" />
+            <state relative-caret-position="13224">
+              <caret line="551" column="43" selection-start-line="551" selection-start-column="43" selection-end-line="551" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/ticket/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2448">
+              <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -267,21 +214,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-family:</find>
-      <find>body{</find>
-      <find>||</find>
-      <find>#ff763a</find>
-      <find>a:hover</find>
-      <find>#ffc6ba</find>
-      <find>#ff5e3a</find>
-      <find>fixed-sidebar</find>
-      <find>sidebar-left-1</find>
-      <find>full</find>
-      <find>&lt;div class=&quot;label-avatar bg-purple&quot;&gt;2&lt;/div&gt;</find>
-      <find>.friend-groups .friend-avatar .author-thumb</find>
-      <find>برنامه کاری</find>
-      <find>sidebar</find>
-      <find>همه</find>
       <find>$('.header-menu').removeClass('open');</find>
       <find>$sidebar</find>
       <find>js-sidebar</find>
@@ -297,6 +229,21 @@
       <find>update-header-photo</find>
       <find>create-event</find>
       <find>active</find>
+      <find>رویداد خصوصی</find>
+      <find>نمودار دایره ای</find>
+      <find>مودار دایره ای</find>
+      <find>خط سالانه گرافیک</find>
+      <find>#pie-small-chart</find>
+      <find>pie-small-chart</find>
+      <find>ز</find>
+      <find>Summernote</find>
+      <find>&lt;!-- Window-popup-CHAT for responsive min-width: 768px --&gt;</find>
+      <find>.popup-chat .chat-message-field li:nth-child(2n) .chat-message-item</find>
+      <find>.popup-chat</find>
+      <find>.popup-chat .chat-message-field li:nth-child(2n) .notification-event</find>
+      <find>header</find>
+      <find>author-thumb</find>
+      <find>&lt;!-- Header --&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;{{ url('/frontEnd/</replace>
@@ -316,30 +263,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/PurchaseRows.php" />
-        <option value="$PROJECT_DIR$/app/Models/Purchases.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/ScheduleController.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/master.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/office/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/office/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/office/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/schedule/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/schedule/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/virtualNumber/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/virtualNumber/payment.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/profile/changePassword.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/profile/editInformation.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/patient/master.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Patient/PatientController.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/patient/sections/profile/changePassword.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/patient/partials/navbarPanelUser.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/patient/partials/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/doctor/partials/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/patient/sections/profile/editInformation.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/GeneralDoctors.php" />
         <option value="$PROJECT_DIR$/resources/views/user/doctor/partials/navbarPanelUser.blade.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Models/UserActiveServices.php" />
         <option value="$PROJECT_DIR$/app/Models/VirtualNumbers.php" />
         <option value="C:/xampp/htdocs/awww/target.php" />
@@ -353,9 +280,7 @@
         <option value="&lt;e1c40108-0c1a-4ba5-b75c-da2e940d5a28&gt;/resources/lang/fa/validation.php" />
         <option value="&lt;e1c40108-0c1a-4ba5-b75c-da2e940d5a28&gt;/resources/views/frontEnd/main/sections/congress/single.blade.php" />
         <option value="&lt;e1c40108-0c1a-4ba5-b75c-da2e940d5a28&gt;/resources/views/admin/sections/main/congresses/showRegister.blade.php" />
-        <option value="$PROJECT_DIR$/public/frontEnd/css/main.min.css" />
         <option value="$PROJECT_DIR$/resources/views/user/doctor/pages/upload.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="D:/ss/d/PorjectePHP/exam32negin/resources/views/exam/sections/exams/takeTest.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php" />
@@ -367,6 +292,28 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_07_09_104955_create_voices_of_services_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/VirtualNumberController.php" />
         <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/virtualNumber/addService.blade.php" />
+        <option value="$PROJECT_DIR$/../32neginApp/database/migrations/2019_01_12_050540_create_ticket_admins_table.php" />
+        <option value="$PROJECT_DIR$/../appliction/app-backend/bin/www" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_15_061817_create_category_tickets_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/CategoryTicket.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_15_064123_create_answer_tickets_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/AnswerTicket.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/doctor/partials/header.blade.php" />
+        <option value="$PROJECT_DIR$/../theme/59087_main-files-1/20-CalendarAndEvents-MonthlyCalendar.html" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_15_060428_create_user_tickets_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/ticket/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/tickets/index.blade.php" />
+        <option value="D:/New folder/app/back-end/bin/www" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sections/tickets/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/TicketController.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/ticket/index.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Doctor/TicketsController.php" />
+        <option value="$PROJECT_DIR$/public/frontEnd/css/main.min.css" />
+        <option value="$PROJECT_DIR$/app/Models/UserTicket.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/doctor/sections/ticket/show.blade.php" />
       </list>
     </option>
   </component>
@@ -469,9 +416,9 @@
       <path value="$PROJECT_DIR$/vendor/sopamo/laravel-filepond" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="458" />
+    <option name="y" value="72" />
     <option name="width" value="1382" />
     <option name="height" value="754" />
   </component>
@@ -510,18 +457,52 @@
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Doctor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Doctor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
@@ -538,7 +519,8 @@
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
@@ -574,51 +556,7 @@
             <path>
               <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="doctor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="doctor" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="doctor" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
-              <item name="virtualNumber" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="officeVoipProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="officeVoipProject" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -635,7 +573,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/user/patient" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/sections/tickets" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -643,11 +581,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\admin\sections\tickets" />
       <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\patient" />
       <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\doctor" />
       <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\partials\patient" />
       <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\admin\sections\service" />
-      <recent name="C:\Users\mohamad\Desktop\officeVoipProject\app\Http\Controllers\Admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mohamad\Desktop\officeVoipProject\resources\views\user\patient" />
@@ -726,24 +664,26 @@
       <workItem from="1562990492714" duration="10000" />
       <workItem from="1562990800161" duration="14459000" />
       <workItem from="1563076246965" duration="15036000" />
-      <workItem from="1563162503834" duration="1956000" />
+      <workItem from="1563162503834" duration="16342000" />
+      <workItem from="1563249615230" duration="20720000" />
+      <workItem from="1563335767534" duration="12852000" />
+      <workItem from="1563425840358" duration="1390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="449483000" />
+    <option name="totallyTimeSpent" value="498831000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.23347548" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24147122" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="GraphQL" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1920" height="1017" id="Terminal" order="2" type="WINDOWED" visible="true" weight="0.696767" />
+      <window_info anchor="bottom" x="0" y="23" width="1920" height="1017" id="Terminal" order="2" type="WINDOWED" visible="true" weight="0.696767" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
@@ -767,281 +707,151 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/user/patient/partials/navbarPanelUser.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_15_061817_create_category_tickets_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        <state relative-caret-position="384">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/TicketitServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="114" column="66" lean-forward="true" selection-start-line="114" selection-start-column="66" selection-end-line="114" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/CategoryTicket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/Migrations/2016_01_15_002617_add_htmlcontent_to_ticketit_and_comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/AnswerTicket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_104955_create_voices_of_services_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/Controllers/NotificationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/schedule/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="33" lean-forward="true" selection-end-line="211" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/schedule/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/profile/panel.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="283" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/Migrations/2015_07_22_123254_alter_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/patient/partials/navbarPanelUser.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/Doctor/storeRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="31" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/partials/navbarPanelUser.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/virtualNumber/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/ss/d/PorjectePHP/dg_learn/dg_learn/resources/views/Admin/articles/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/ss/d/PorjectePHP/dg_learn/dg_learn/resources/views/Admin/roles/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/VirtualNumbers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/partials/navbarCart.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="99" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/UserActiveServices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/awww/target.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/18-MusicAndPlaylists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="2925" selection-start-line="2925" selection-end-line="2925" />
-          <folding>
-            <element signature="e#1034#9824#0" />
-            <element signature="e#19859#34631#0" />
-            <element signature="e#71623#79724#0" />
-            <element signature="e#79727#80408#0" />
-            <element signature="e#80411#105797#0" />
-            <element signature="e#105827#110218#0" />
-            <element signature="e#110314#116604#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_07_053943_create_user_active_services_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/17-FriendGroups.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="2150" column="26" selection-start-line="2150" selection-start-column="26" selection-end-line="2150" selection-end-column="26" />
-          <folding>
-            <element signature="e#1022#9812#0" />
-            <element signature="e#9884#16714#0" />
-            <element signature="e#16787#36653#0" />
-            <element signature="e#36738#37110#0" />
-            <element signature="e#37185#57338#0" />
-            <element signature="e#57403#73711#0" />
-            <element signature="e#73841#74560#0" />
-            <element signature="e#88506#91617#0" />
-            <element signature="e#91731#94200#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/partials/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/DoctorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="49" column="4" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/profile/panel.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="83" column="71" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/fa/validation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5784">
-          <caret line="241" column="55" selection-start-line="241" selection-start-column="45" selection-end-line="241" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/awww/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/frontEnd/css/main.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147216">
-          <caret line="6134" column="24" selection-start-line="6134" selection-start-column="24" selection-end-line="6134" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/pages/upload.blade.php" />
-    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/20-CalendarAndEvents-MonthlyCalendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96864">
-          <caret line="4036" selection-start-line="4036" selection-end-line="4168" />
-          <folding>
-            <element signature="e#159692#164557#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/07-ProfilePage-Photos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76872">
-          <caret line="3203" column="44" selection-start-line="3203" selection-start-column="44" selection-end-line="3203" selection-end-column="44" />
-          <folding>
-            <element signature="e#142776#143976#0" />
-            <element signature="e#144077#150301#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/partials/errors.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../32negin.com-full-May-19-2019-1/domains/32negin.com/app/Http/Controllers/Api/v1/ShowController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9868">
-          <caret line="65" column="50" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/ss/d/PorjectePHP/exam32negin/resources/views/exam/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-864" />
-      </provider>
-    </entry>
-    <entry file="file://D:/ss/d/PorjectePHP/exam32negin/resources/views/exam/sections/exams/addExam.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2016" />
-      </provider>
-    </entry>
-    <entry file="file://D:/ss/d/PorjectePHP/exam32negin/resources/views/exam/sections/exams/takeTest.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="85" column="50" selection-start-line="85" selection-start-column="50" selection-end-line="85" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/ss/d/PorjectePHP/exam32negin/public/examAssets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6024">
-          <caret line="251" column="1" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/ss/d/PorjectePHP/exam32negin/resources/views/exam/sections/exams/sendAddress.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/ss/d/PorjectePHP/exam32negin/app/Http/Controllers/Exam/examController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../32neginApp/app/Http/Controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="38" column="68" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/OfficeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/ticket/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="60" column="107" selection-start-line="60" selection-start-column="100" selection-end-line="60" selection-end-column="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/ScheduleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1108">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="216">
+          <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../32neginApp/app/Http/Requests/Admin/Main/dbmCourseStore.php">
+    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/20-CalendarAndEvents-MonthlyCalendar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="-1110">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_104915_create_voice_categories_table.php">
+    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/26-Statistics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/virtualNumber/addService.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="423" column="47" selection-start-line="423" selection-start-column="47" selection-end-line="423" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1272">
-          <caret line="86" column="36" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+        <state relative-caret-position="65520">
+          <caret line="2790" column="26" selection-start-line="2790" selection-start-column="20" selection-end-line="2790" selection-end-column="26" />
           <folding>
-            <element signature="e#524#1810#1#PHP" />
+            <element signature="e#75419#77170#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/js/run-chart.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/js/base-init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/js/chartjs-plugin-deferred.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="139" selection-start-column="139" selection-end-column="139" />
         </state>
       </provider>
     </entry>
@@ -1055,81 +865,218 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/VoipServices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_102700_create_voice_files_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/VoiceFiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/VoicesOfServices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/VoiceCategories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_104955_create_voices_of_services_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/System/SystemController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6024">
-          <caret line="257" selection-start-line="257" selection-end-line="257" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/Views/bootstrap4/admin/agent/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/Views/bootstrap4/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/js/loader.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/Views/bootstrap4/layouts/master.blade.php">
+    <entry file="file://$PROJECT_DIR$/../32neginApp/public/AdminAssets/js/datatable/datatables-init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+        <state relative-caret-position="219">
+          <caret line="234" column="61" selection-start-line="234" selection-start-column="61" selection-end-line="278" selection-end-column="13" />
+          <folding>
+            <element signature="e#9366#11193#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/ViewComposers/TicketItComposer.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_15_064123_create_answer_tickets_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="432">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="218" column="16" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/New folder/app/back-end/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ticketit-0.2/src/Mail/TicketitNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DoctorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1152">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/DoctorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="100" selection-start-line="100" selection-end-line="100" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PanelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PatientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1348">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="75" column="3" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="76" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/tickets/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2136">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sections/tickets/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../VoIP Project/adminTheme/template html/form-editors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6024">
+          <caret line="1253" selection-start-line="1253" selection-end-line="1253" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_15_060428_create_user_tickets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="69" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../theme/59087_main-files-1/16-FavPagesFeed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="3080" selection-start-line="3080" selection-end-line="3292" selection-end-column="10" />
+          <folding>
+            <element signature="e#107496#113760#0" />
+            <element signature="e#108128#109687#0" />
+            <element signature="e#109692#113732#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/TicketController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#46#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Doctor/TicketsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+          <folding>
+            <element signature="e#47#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="112" column="74" selection-start-line="112" selection-start-column="74" selection-end-line="112" selection-end-column="74" />
+          <folding>
+            <element signature="e#524#1810#1#PHP" />
+            <element signature="e#2637#3362#1#PHP" />
+            <element signature="e#3435#4401#1#PHP" />
+            <element signature="e#4464#5436#1#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontEnd/css/main.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143400">
+          <caret line="5975" column="16" selection-start-line="5975" selection-start-column="16" selection-end-line="5975" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/UserTicket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="40" column="74" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="74" />
+          <folding>
+            <element signature="e#30#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2712">
+          <caret line="113" column="20" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/partials/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7752">
+          <caret line="323" column="75" selection-start-line="323" selection-start-column="75" selection-end-line="323" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13224">
+          <caret line="551" column="43" selection-start-line="551" selection-start-column="43" selection-end-line="551" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/ticket/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/doctor/sections/ticket/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
         </state>
       </provider>
     </entry>

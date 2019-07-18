@@ -5896,7 +5896,7 @@ fieldset[disabled] .checkbox input[type=checkbox] {
 	}
 }
 .popup-chat {
-	width: 320px;
+	width: 100%;
 	box-shadow: 0 0 34px 0 rgba(63, 66, 87, .1);
 	overflow: hidden;
 	position: relative;
@@ -5962,16 +5962,21 @@ fieldset[disabled] .checkbox input[type=checkbox] {
 .popup-chat .chat-message-field li:last-child {
 	margin-bottom: 40px
 }
-.popup-chat .chat-message-field li:nth-child(2n) .chat-message-item {
-	background-color: #7c5ac2;
-	color: #fff
+.popup-chat .chat-message-field li.answer{
+    float: right;
 }
-.popup-chat .chat-message-field li:nth-child(2n) .author-thumb,
-.popup-chat .chat-message-field li:nth-child(2n) .chat-message-item {
-	float: left;
+
+.popup-chat .chat-message-field li.answer .notification-event div{
+    background-color: #7c5ac2;
+    color: #fff !important;
 }
+
+.popup-chat .chat-message-field li.answer .author-thumb,
+.popup-chat .chat-message-field li.answer .notification-event{
+    float: left;
+}
+
 .popup-chat .chat-message-field li:nth-child(2n) .notification-event {
-	float: left;
 	padding-right: 0;
 	padding-right: 10px;
 }

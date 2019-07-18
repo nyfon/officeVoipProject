@@ -103,6 +103,22 @@ Route::group(['namespace' => 'doctor', 'middleware' => ['auth', 'checkActive', '
 
     });
 
+    // Ticket
+    $this->group(['prefix' => 'Ticket'], function () {
+        // index
+        $this->get('/', 'TicketsController@index')->name('doctor.ticket.index');
+        $this->get('/crate', 'TicketsController@create')->name('doctor.ticket.crate');
+        $this->post('/', 'TicketsController@store')->name('doctor.ticket.store');
+        $this->get('show/{ticket}', 'TicketsController@show')->name('doctor.ticket.show');
+        $this->post('addToTicket/{ticket}', 'TicketsController@addToTicket')->name('doctor.ticket.add.to.ticket');
+
+    /*    $this->get('/{ticket}', 'TicketsController@create')->name('doctor.ticket.show');
+        $this->post('/{ticket}', 'TicketsController@store')->name('doctor.ticket.store');*/
+
+    });
+
+
+
 });
 /*  /Route doctor */
 
@@ -185,9 +201,19 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['auth', 'checkActive', 'c
 
     });
 
+    // ticket
+    $this->group(['prefix' => 'ticket'], function () {
+
+        //index
+        $this->get('/{status}', 'TicketController@index')->name('admin.ticket.index');
+        $this->get('show/{ticket}', 'TicketController@show')->name('admin.ticket.show');
+        $this->post('answer/{ticket}', 'TicketController@answer')->name('admin.ticket.answer');
+
+    });
+
 
 });
-/*  /Route A */
+/*  /Route Admin */
 
 Route::get('/home', 'HomeController@index')->name('home');
 

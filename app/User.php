@@ -6,6 +6,7 @@ use App\Models\ActivationCode;
 use App\Models\GeneralDoctors;
 use App\Models\GeneralPatients;
 use App\Models\UserGroup;
+use App\Models\UserTicket;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -111,6 +112,15 @@ class User extends Authenticatable
     }
 
     /**
+     * Get the Activation Code for user.
+     */
+
+    public function userTicket(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(UserTicket::class);
+    }
+
+    /**
      * Get the general doctor for user.
      */
     public function generalDoctor(): \Illuminate\Database\Eloquent\Relations\HasOne
@@ -123,7 +133,9 @@ class User extends Authenticatable
 
 
         if($this->getUserGroup()->name && $this->getUserGroup()->family){
+
             return    $this->getUserGroup()->name.' '.$this->getUserGroup()->family;
+
         }
         return 'وارد نشده';
     }
@@ -204,10 +216,23 @@ class User extends Authenticatable
     }
 
     public function getUserGroup(){
-        if($this->userGroup->name === 'doctor'){
-            return $this->generalDoctor;
+        $data=[];
+        switch ($this->userGroup->name){
+            case 'doctor':
+                $data = $this->generalDoctor;
+                break;
+
+            case 'patient':
+                $data = $this->generalPatient;
+                break;
+
+            case 'admin':
+                $data = $this->generalDoctor;
+                break;
+
         }
-        return $this->generalPatient;
+        return $data;
+
     }
 
 

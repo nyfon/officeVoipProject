@@ -253,6 +253,17 @@
                         <span class="left-menu-title">بخش مطب</span>
                     </a>
                 </li>
+
+                <li>
+                    <a href="{{ route('doctor.ticket.index') }}">
+                        <svg class="olymp-newsfeed-icon left-menu-icon" data-toggle="tooltip" data-placement="right"
+                             data-original-title="بخش مطب">
+                            <use xlink:href="/frontEnd/svg-icons/sprites/icons.svg#olymp-stats-icon"></use>
+                        </svg>
+                        <span class="left-menu-title">بخش سوالات</span>
+                    </a>
+                </li>
+
                 <li>
                     <a href="{{ route('doctor.virtualNumber.index') }}">
                         <svg class="olymp-star-icon left-menu-icon" data-toggle="tooltip" data-placement="right"

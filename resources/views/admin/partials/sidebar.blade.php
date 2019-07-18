@@ -90,6 +90,35 @@
             </ul>
         </li>
 
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-table"></i>
+                <span class="menu-text">سوالات</span>
+
+                <i class="menu-expand"></i>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="{{ route('admin.ticket.index', 'unread') }}">
+                        <span class="menu-text">سوالات خوانده نشده</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('admin.ticket.index', 'read') }}">
+                        <span class="menu-text">سوالات خوانده شده</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('admin.ticket.index', 'answered')  }}">
+                        <span class="menu-text">سوالات پاسخ داده شده</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
 
 
         <!--Tables-->
